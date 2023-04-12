@@ -1,0 +1,10 @@
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.Properties.Resources.resources
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\HotelManage\bin\Debug\HotelManage.exe.config
+C:\Users\DELL\source\repos\HotelManage\bin\Debug\HotelManage.exe
+C:\Users\DELL\source\repos\HotelManage\bin\Debug\HotelManage.pdb
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.exe
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.pdb
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.fLogin.resources

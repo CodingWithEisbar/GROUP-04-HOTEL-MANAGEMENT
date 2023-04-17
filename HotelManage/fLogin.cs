@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManage.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,10 +39,40 @@ namespace HotelManage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string role="";
+            if (checkBox1.Checked) {
+                role = "Bellman";
+            
+            }
+            string username = textBox1.Text;
+            string pass = textBox2.Text;
+            if (login(username, pass,role))
+            {
+
+                BellmanDashboard f = new BellmanDashboard();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+
+
+            }
+        }
+        bool login(string username, string pass,string role)
+        {
+            return AccountDAO.Instance.Login(username, pass,role);
+
+        }
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

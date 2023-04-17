@@ -8,3 +8,7 @@ C:\Users\DELL\source\repos\HotelManage\bin\Debug\HotelManage.pdb
 C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.exe
 C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.pdb
 C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.fLogin.resources
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.BellmanDashboard.resources
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.KiemTraTinhTrangPhong.resources
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.DanhSachDichvu.resources
+C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.fFormdangkithongtinvanchuyenhanhli.resources

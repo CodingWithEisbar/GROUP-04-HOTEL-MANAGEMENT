@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +17,7 @@ namespace HotelManage.DAO
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
             private set { DataProvider.instance = value; }
         }
-        private string conntstr = "Data Source=.\\sqlexpress;Initial Catalog=ONLINEFOOD;Integrated Security=True";//thay doi cho phu hop voi db
+        private string conntstr = "Data Source=.\\sqlexpress;Initial Catalog=QLKHACHSAN;Integrated Security=True";//thay doi cho phu hop voi db
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
@@ -116,4 +118,4 @@ namespace HotelManage.DAO
         }
     }
 }
-}
+

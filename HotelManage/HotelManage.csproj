@@ -46,23 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BellmanDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BellmanDashboard.Designer.cs">
+      <DependentUpon>BellmanDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachDichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachDichvu.Designer.cs">
+      <DependentUpon>DanhSachDichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DichvuDAO.cs" />
+    <Compile Include="DAO\dichvuvanvhuyenhanhliDAO.cs" />
+    <Compile Include="DAO\phongDAO.cs" />
+    <Compile Include="DTO\Dichvu.cs" />
+    <Compile Include="DTO\phong.cs" />
+    <Compile Include="fFormdangkithongtinvanchuyenhanhli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFormdangkithongtinvanchuyenhanhli.Designer.cs">
+      <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="KiemTraTinhTrangPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="KiemTraTinhTrangPhong.Designer.cs">
+      <DependentUpon>KiemTraTinhTrangPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BellmanDashboard.resx">
+      <DependentUpon>BellmanDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachDichvu.resx">
+      <DependentUpon>DanhSachDichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFormdangkithongtinvanchuyenhanhli.resx">
+      <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiemTraTinhTrangPhong.resx">
+      <DependentUpon>KiemTraTinhTrangPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,8 +122,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

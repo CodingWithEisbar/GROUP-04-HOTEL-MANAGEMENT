@@ -10,7 +10,6 @@ USE QLKHACHSAN
 GO
 
 --- TẠO BẢNG DỮ LIỆU
-
 CREATE TABLE NHANVIEN
 (
 	MANV VARCHAR(50),
@@ -233,13 +232,9 @@ CONSTRAINT MAKH
 PRIMARY KEY(MAKH)
 )
 
+--- CÀI ĐẶT KHÓA NGOẠI
 
-
-
-
---- CAI DAT KHOA NGOAI
-
-ALTER TABLE KHACHHANGNHOM
+ALTER TABLE KHACHHANGNHOM --- THÔNG TIN CHI TIẾT CỦA KHÁCH HÀNG ĐẶT PHÒNG THEO ĐOÀN PHẢI ĐƯỢC LƯU TRONG DANH SÁCH KHÁCH HÀNG
 ADD CONSTRAINT FK_KHTM_KH
 FOREIGN KEY (MAKH) REFERENCES KHACHHANG(MAKH)
 
@@ -310,3 +305,24 @@ FOREIGN KEY (MAKH) REFERENCES KHACHHANG(MAKH)
 ALTER TABLE DANGKYVANCHUYENHANHLY
 ADD CONSTRAINT FK_DKVCHL_PHONG
 FOREIGN KEY (SOPHONG) REFERENCES PHONG(SOPHONG)
+
+-- NHẬP DỮ LIỆU
+INSERT NHANVIEN(MANV, HOTEN, NGAYSINH, SODT, DIACHI, CCCD, CATRUC, VAITRO)
+VALUES ('NV001', N'Lê Văn Quân', '1973-02-15', '0838126126', N'69 Trịnh Đình Thảo, Phú Trung, Tân Phú, Thành phố Hồ Chí Minh', '782936885101', NULL , N'Lễ Tân'),
+	   ('NV002', N'Nguyễn Văn Tuyết', '1979-10-30', '0374080895', N'565 Lạc Long Quân, Phường 10, Tân Bình, Thành phố Hồ Chí Minh', '823326582035', NULL , N'Lễ Tân'),
+	   ('NV003', N'Trần Văn Thành', '1980-11-20', '0274010895', N'45 Lê Thánh Tôn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh', '603167292135', NULL , N'Bellman'),
+	   ('NV004', N'Mai Tuấn Khanh', '1978-05-08', '0999712602', N'973 Lũy Bán Bích, Tân Thành, Tân Phú, Thành phố Hồ Chí Minh', '445794292675', NULL , N'Bellman'),
+	   ('NV005', N'Bùi Xuân Huy', '1979-10-11', '0397836164', N'1134 Phạm Văn Đồng, Linh Đông, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh', '902270137212', NULL , N'Nhân viên vệ sinh'),
+	   ('NV006', N'Vũ Hồng Đức', '1989-02-12', '0897205247', N'740/15A Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh', '095623791774', NULL , N'Nhân viên kế toán'),
+	   ('NV007', N'Đoàn Văn Vui', '1990-01-02', '0523613534', N'B15/13c Ấp 2, Bình Chánh, Thành phố Hồ Chí Minh', '673275174393', NULL , N'Nhân viên kế toán')
+
+INSERT CHITIETNV(MANV, TANGHD)
+VALUES ('NV001', N'')
+
+INSERT KHACHHANG(MAKH, TENKH, DIACHI, SODT, SOFAX, EMAIL, CCCD, SOTHE, HINHTHUCTHANHTOAN)
+VALUES ('KH001', N'Tôn Thất Bách', N'740/15A Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh', '0339161316', '+84 24 123 4567', N'yokuneva@yahoo.com', '554926537264','4849860728359294', N'Thẻ tín dụng'),
+	   ('KH002', N'Nguyễn Trung Nguyên', N'Hẻm 320 Trần Bình Trọng, Phường 4, Quận 5, Thành phố Hồ Chí Minh', '0999837480', '+84 28 234 5678', N'jasetaylor@yt-google.com', '790856623849', NULL, N'Tiền mặt'),
+	   ('KH003', N'Lại An Phú', N'565 Lạc Long Quân, Phường 10, Tân Bình, Thành phố Hồ Chí Minh', '0374080895', '+84 236 345 6789', N'fkuhn@hotmail.com', '058411867415', '4961813447012597', N'Thẻ tín dụng')
+
+INSERT KHACHHANGNHOM(MAKH, TENDOANKHACH, SONGUOI, NGAYDEN, SODEMLUUTRU)
+VALUES ('KH003', N'ĐH Khoa học Tự nhiên - ĐHQG TPHCM', 100, )

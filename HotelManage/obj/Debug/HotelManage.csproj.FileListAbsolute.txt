@@ -12,3 +12,18 @@ C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.BellmanDashboard.re
 C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.KiemTraTinhTrangPhong.resources
 C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.DanhSachDichvu.resources
 C:\Users\DELL\source\repos\HotelManage\obj\Debug\HotelManage.fFormdangkithongtinvanchuyenhanhli.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\bin\Debug\HotelManage.exe.config
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\bin\Debug\HotelManage.exe
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\bin\Debug\HotelManage.pdb
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.AssemblyReference.cache
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.SuggestedBindingRedirects.cache
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.BellmanDashboard.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.DanhSachDichvu.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fFormdangkithongtinvanchuyenhanhli.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLogin.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.KiemTraTinhTrangPhong.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.Properties.Resources.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.GenerateResource.cache
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.CoreCompileInputs.cache
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.exe
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.pdb

@@ -17,7 +17,7 @@ namespace HotelManage.DAO
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
             private set { DataProvider.instance = value; }
         }
-        private string conntstr = "Data Source=.\\sqlexpress;Initial Catalog=QLKHACHSAN;Integrated Security=True";//thay doi cho phu hop voi db
+        private string conntstr = "Data Source= LAPTOP-VHA4VQIJ;Initial Catalog=QLKHACHSAN;Integrated Security=True";//thay doi cho phu hop voi db
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

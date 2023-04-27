@@ -18,7 +18,10 @@ namespace HotelManage.DAO
 
         }
         private phongDAO() { }
-
+        public DataTable getRoomPromotion(string roomNumber)
+        {
+            return DataProvider.Instance.ExcuteQuery("SELECT * FROM KHUYENMAITHEOPHONG WHERE SOPHONG = '" + roomNumber + "'");
+        }
         public List<phong> checkStatus(string sophong)
         {
             List<phong> tablelist = new List<phong>();

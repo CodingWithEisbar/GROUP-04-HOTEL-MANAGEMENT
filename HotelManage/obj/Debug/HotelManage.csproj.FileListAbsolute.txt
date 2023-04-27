@@ -27,3 +27,21 @@ D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\Hotel
 D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.CoreCompileInputs.cache
 D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.exe
 D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.pdb
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\bin\Debug\HotelManage.exe.config
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\bin\Debug\HotelManage.exe
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\bin\Debug\HotelManage.pdb
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.BellmanDashboard.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.DanhSachDichvu.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fFormdangkithongtinvanchuyenhanhli.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLogin.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.KiemTraTinhTrangPhong.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.Properties.Resources.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.exe
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.pdb
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanDashboard.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanBangGiaDichvu.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanKiemtraKhuyenmai.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTourDuLich.resources

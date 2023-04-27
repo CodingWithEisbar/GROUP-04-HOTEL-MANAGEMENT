@@ -44,15 +44,28 @@ namespace HotelManage
                 role = "Bellman";
             
             }
+            if (LeTanCheckBox.Checked)
+            {
+                role = "LT";
+            }
             string username = textBox1.Text;
             string pass = textBox2.Text;
             if (login(username, pass,role))
             {
-
-                BellmanDashboard f = new BellmanDashboard();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
+                if (checkBox1.Checked)
+                {
+                    BellmanDashboard f = new BellmanDashboard();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                if (LeTanCheckBox.Checked)
+                {
+                    fLeTanDashboard f = new fLeTanDashboard();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
             }
             else
             {

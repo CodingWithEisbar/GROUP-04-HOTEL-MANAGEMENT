@@ -18,7 +18,10 @@ namespace HotelManage.DAO
 
         }
         private DichvuDAO() { }
-
+        public DataTable getServiceList()
+        {
+            return DataProvider.Instance.ExcuteQuery("SELECT * FROM DICHVU");
+        }
         public List<Dichvu> laydanhsachdichvu()
         {
             List<Dichvu> tablelist = new List<Dichvu>();

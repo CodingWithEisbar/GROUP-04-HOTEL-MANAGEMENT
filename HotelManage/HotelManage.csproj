@@ -63,13 +63,39 @@
     <Compile Include="DAO\DichvuDAO.cs" />
     <Compile Include="DAO\dichvuvanvhuyenhanhliDAO.cs" />
     <Compile Include="DAO\phongDAO.cs" />
+    <Compile Include="DAO\TourDuLichDAO.cs" />
     <Compile Include="DTO\Dichvu.cs" />
     <Compile Include="DTO\phong.cs" />
+    <Compile Include="DTO\TourDuLich.cs" />
     <Compile Include="fFormdangkithongtinvanchuyenhanhli.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fFormdangkithongtinvanchuyenhanhli.Designer.cs">
       <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLeTanKiemtraKhuyenmai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLeTanKiemtraKhuyenmai.Designer.cs">
+      <DependentUpon>fLeTanKiemtraKhuyenmai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLeTanBangGiaDichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLeTanBangGiaDichvu.Designer.cs">
+      <DependentUpon>fLeTanBangGiaDichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLeTanDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLeTanDashboard.Designer.cs">
+      <DependentUpon>fLeTanDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLeTanTourDuLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLeTanTourDuLich.Designer.cs">
+      <DependentUpon>fLeTanTourDuLich.cs</DependentUpon>
     </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
@@ -93,6 +119,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fFormdangkithongtinvanchuyenhanhli.resx">
       <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLeTanBangGiaDichvu.resx">
+      <DependentUpon>fLeTanBangGiaDichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLeTanKiemtraKhuyenmai.resx">
+      <DependentUpon>fLeTanKiemtraKhuyenmai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLeTanDashboard.resx">
+      <DependentUpon>fLeTanDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLeTanTourDuLich.resx">
+      <DependentUpon>fLeTanTourDuLich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>

@@ -51,7 +51,7 @@ namespace HotelManage
             this.tạoPhiếuĐăngKýTourToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(894, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,12 +81,14 @@ namespace HotelManage
             this.tạoPhiếuSửDụngDịchVụToolStripMenuItem1.Name = "tạoPhiếuSửDụngDịchVụToolStripMenuItem1";
             this.tạoPhiếuSửDụngDịchVụToolStripMenuItem1.Size = new System.Drawing.Size(197, 24);
             this.tạoPhiếuSửDụngDịchVụToolStripMenuItem1.Text = "Tạo phiếu sử dụng dịch vụ";
+            this.tạoPhiếuSửDụngDịchVụToolStripMenuItem1.Click += new System.EventHandler(this.tạoPhiếuSửDụngDịchVụToolStripMenuItem1_Click);
             // 
             // tạoPhiếuĐăngKýTourToolStripMenuItem
             // 
             this.tạoPhiếuĐăngKýTourToolStripMenuItem.Name = "tạoPhiếuĐăngKýTourToolStripMenuItem";
             this.tạoPhiếuĐăngKýTourToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
             this.tạoPhiếuĐăngKýTourToolStripMenuItem.Text = "Tạo phiếu đăng ký Tour";
+            this.tạoPhiếuĐăngKýTourToolStripMenuItem.Click += new System.EventHandler(this.tạoPhiếuĐăngKýTourToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -98,7 +100,7 @@ namespace HotelManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(894, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fLeTanDashboard";

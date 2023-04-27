@@ -34,5 +34,17 @@ namespace HotelManage
             fLeTanTourDuLich f = new fLeTanTourDuLich();
             f.ShowDialog();
         }
+
+        private void tạoPhiếuSửDụngDịchVụToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fLeTanTaoPhieuSuDungDichVu f = new fLeTanTaoPhieuSuDungDichVu();
+            f.ShowDialog();
+        }
+
+        private void tạoPhiếuĐăngKýTourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fLeTanTaoPhieuDangKyTourDuLich f = new fLeTanTaoPhieuDangKyTourDuLich();
+            f.ShowDialog();
+        }
     }
 }

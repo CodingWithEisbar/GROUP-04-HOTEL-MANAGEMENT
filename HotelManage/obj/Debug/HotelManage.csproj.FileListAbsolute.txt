@@ -45,3 +45,5 @@ C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelMana
 C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanBangGiaDichvu.resources
 C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanKiemtraKhuyenmai.resources
 C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTourDuLich.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuSuDungDichVu.resources
+C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuDangKyTourDuLich.resources

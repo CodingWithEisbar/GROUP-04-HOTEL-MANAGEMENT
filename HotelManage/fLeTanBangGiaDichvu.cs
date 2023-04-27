@@ -19,6 +19,7 @@ namespace HotelManage
             InitializeComponent();
             dataGridView1.DataSource = ServList;
             ServList.DataSource = DichvuDAO.Instance.getServiceList();
+            //ServList.DataSource = DataProvider.Instance.ExcuteQuery("SELECT * FROM DICHVU");
             txbServName.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "TENDICHVU", true, DataSourceUpdateMode.Never));
             txbServPrice.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "GIATIEN", true, DataSourceUpdateMode.Never));
             richtxbServDetails.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "MOTA", true, DataSourceUpdateMode.Never));

@@ -29,7 +29,7 @@ CREATE TABLE NHANVIEN
 CREATE TABLE CHITIETNV
 (
 	MANV VARCHAR(50),
-	TANGHD NVARCHAR(100)
+	TANGHD VARCHAR(100)
 	
 	CONSTRAINT PK_CHITIETNV
 	PRIMARY KEY(MANV)
@@ -118,7 +118,6 @@ CREATE TABLE THONGTINDATPHONG
 CREATE TABLE KHUYENMAITHEOPHONG
 (
 	MAKHUYENMAI VARCHAR(50),
-	SOPHONG VARCHAR(50),
 	NOIDUNG NVARCHAR(100)
 	
 	CONSTRAINT PK_KHUYENMAITHEOPHONG
@@ -173,13 +172,15 @@ CREATE TABLE HOADON
 )
 CREATE TABLE CHITIETHOADON
 (
-	MAHD VARCHAR(50),
 	MACT VARCHAR(50),
+	MAHD VARCHAR(50),
 	NGAYLAP DATE,
 	DICHVUSUDUNG VARCHAR(50), --- NỐI VỚI MADICHVU Ở BẢNG DỊCH VỤ
 	DONGIA DECIMAL (10,2),
 	SOLUONG DECIMAL
 
+	CONSTRAINT PK_CHITIETHOADON
+	PRIMARY KEY (MACT, MAHD)
 )
 CREATE TABLE PHIEU
 (
@@ -195,7 +196,7 @@ CREATE TABLE PHIEUDANGKYTOUR
 	MAPHIEU VARCHAR(50),
 	TOURTHAMGIA VARCHAR(50), -- MÃ TOUR
 	SOLUONGNGUOI DECIMAL,
-	HINHTHUCDICHUYEN NVARCHAR(100),
+	HINHTHUCDICHUYEN NVARCHAR(100), -- HÌNH THỨC DI CHUYỂN "XE HỢP ĐỒNG", "TỰ TÚC"
 	YEUCAUDACBIET NVARCHAR(100)
 
 	CONSTRAINT PK_PHIEUDANGKYTOUR
@@ -223,16 +224,15 @@ CREATE TABLE DANHSACHNHAXE
 )
 CREATE TABLE TAIKHOAN
 (
-USERNAME VARCHAR(50),
-PASS VARCHAR(50),
-VAITRO NVARCHAR(50),
-MANV VARCHAR(50),
+	USERNAME VARCHAR(50),
+	PASS VARCHAR(50),
+	VAITRO VARCHAR(50),
+	MANV VARCHAR(50),
 
-
-CONSTRAINT PK_TAIKHOAN
-PRIMARY KEY(USERNAME,PASS)
+	CONSTRAINT PK_TAIKHOAN
+	PRIMARY KEY(USERNAME,PASS)
 )
-/*ELECT * FROM NHANVIEN
+/*SELECT * FROM NHANVIEN
 insert into TAIKHOAN(USERNAME,PASS,VAITRO,MANV) values
 ('lvquan','123','LT','NV001')
 delete TAIKHOAN where USERNAME = 'lvquan';
@@ -240,12 +240,12 @@ select * from TAIKHOAN
 */
 CREATE TABLE YKIENKHACHHANG
 (
-MAKH VARCHAR(50),
-NGAYLAP DATE,
-MOTA VARCHAR
+	MAKH VARCHAR(50),
+	NGAYLAP DATE,
+	MOTA VARCHAR
 
-CONSTRAINT MAKH
-PRIMARY KEY(MAKH)
+	CONSTRAINT MAKH
+	PRIMARY KEY(MAKH)
 )
 
 --- CÀI ĐẶT KHÓA NGOẠI
@@ -308,9 +308,9 @@ ADD CONSTRAINT FK_TT_YC
 FOREIGN KEY (MAYC) REFERENCES YEUCAUDATPHONG(MAYC)
 
 
-ALTER TABLE KHUYENMAITHEOPHONG
+/*ALTER TABLE KHUYENMAITHEOPHONG
 ADD CONSTRAINT FK_KM_PHONG
-FOREIGN KEY (SOPHONG) REFERENCES PHONG(SOPHONG)
+FOREIGN KEY (SOPHONG) REFERENCES PHONG(SOPHONG)*/
 
 
 ALTER TABLE PHIEU
@@ -324,16 +324,26 @@ FOREIGN KEY (SOPHONG) REFERENCES PHONG(SOPHONG)
 
 -- NHẬP DỮ LIỆU
 INSERT NHANVIEN(MANV, HOTEN, NGAYSINH, SODT, DIACHI, CCCD, CATRUC, VAITRO)
-VALUES ('NV001', N'Lê Văn Quân', '1973-02-15', '0838126126', N'69 Trịnh Đình Thảo, Phú Trung, Tân Phú, Thành phố Hồ Chí Minh', '782936885101', NULL , 'Le Tan'),
-	   ('NV002', N'Nguyễn Văn Tuyết', '1979-10-30', '0374080895', N'565 Lạc Long Quân, Phường 10, Tân Bình, Thành phố Hồ Chí Minh', '823326582035', NULL , 'Le Tan'),
-	   ('NV003', N'Trần Văn Thành', '1980-11-20', '0274010895', N'45 Lê Thánh Tôn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh', '603167292135', NULL , 'Bellman'),
-	   ('NV004', N'Mai Tuấn Khanh', '1978-05-08', '0999712602', N'973 Lũy Bán Bích, Tân Thành, Tân Phú, Thành phố Hồ Chí Minh', '445794292675', NULL , 'Bellman'),
-	   ('NV005', N'Bùi Xuân Huy', '1979-10-11', '0397836164', N'1134 Phạm Văn Đồng, Linh Đông, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh', '902270137212', NULL , 'Ve sinh'),
-	   ('NV006', N'Vũ Hồng Đức', '1989-02-12', '0897205247', N'740/15A Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh', '095623791774', NULL , 'Ke Toan'),
-	   ('NV007', N'Đoàn Văn Vui', '1990-01-02', '0523613534', N'B15/13c Ấp 2, Bình Chánh, Thành phố Hồ Chí Minh', '673275174393', NULL , 'Ke Toan')
+VALUES ('NV001', N'Lê Văn Quân', '1973-02-15', '0838126126', N'69 Trịnh Đình Thảo, Phú Trung, Tân Phú, Thành phố Hồ Chí Minh', '782936885101', NULL , N'Lễ Tân'),
+	   ('NV002', N'Nguyễn Văn Tuyết', '1979-10-30', '0374080895', N'565 Lạc Long Quân, Phường 10, Tân Bình, Thành phố Hồ Chí Minh', '823326582035', NULL , N'Lễ Tân'),
+	   ('NV003', N'Trần Văn Thành', '1980-11-20', '0274010895', N'45 Lê Thánh Tôn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh', '603167292135', NULL , N'Bellman'),
+	   ('NV004', N'Mai Tuấn Khanh', '1978-05-08', '0999712602', N'973 Lũy Bán Bích, Tân Thành, Tân Phú, Thành phố Hồ Chí Minh', '445794292675', NULL , N'Bellman'),
+	   ('NV005', N'Bùi Xuân Huy', '1979-10-11', '0397836164', N'1134 Phạm Văn Đồng, Linh Đông, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh', '902270137212', NULL , N'Vệ sinh'),
+	   ('NV006', N'Vũ Hồng Đức', '1989-02-12', '0897205247', N'740/15A Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh', '095623791774', NULL , N'Kế Toán'),
+	   ('NV007', N'Đoàn Văn Vui', '1990-01-02', '0523613534', N'B15/13c Ấp 2, Bình Chánh, Thành phố Hồ Chí Minh', '673275174393', NULL , N'Kế Toán')
 
 INSERT CHITIETNV(MANV, TANGHD)
-VALUES ('NV001', N'')
+VALUES ('NV001', 'G'),
+	   ('NV002', 'G' ),
+	   ('NV003', '1' ),
+	   ('NV004', '2' ),
+	   ('NV005', '2' ),
+	   ('NV006', 'G' ),
+	   ('NV007', 'G' )
+
+INSERT THENGANHANG (SOTHE, TENCHUTHE, NGANHANG, CHINHANH)
+VALUES ('4849860728359294', 'TON THAT BACH', N'Vietcombank', N'Bình Thạnh'),
+	   ('4961813447012597', 'LAI AN PHU', N'Agribank', N'Tân Hương')
 
 INSERT KHACHHANG(MAKH, TENKH, DIACHI, SODT, SOFAX, EMAIL, CCCD, SOTHE, HINHTHUCTHANHTOAN)
 VALUES ('KH001', N'Tôn Thất Bách', N'740/15A Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh', '0339161316', '+84 24 123 4567', N'yokuneva@yahoo.com', '554926537264','4849860728359294', N'Thẻ tín dụng'),
@@ -343,48 +353,74 @@ VALUES ('KH001', N'Tôn Thất Bách', N'740/15A Sư Vạn Hạnh, Phường 12,
 INSERT KHACHHANGNHOM(MAKH, TENDOANKHACH, SONGUOI, NGAYDEN, SODEMLUUTRU)
 VALUES ('KH003', N'ĐH Khoa học Tự nhiên - ĐHQG TPHCM', 100, '2020-02-12', 5)
 
-INSERT THENGANHANG (SOTHE, TENCHUTHE, NGANHANG, CHINHANH)
-VALUES ('4849860728359294', 'TON THAT BACH', N'Vietcombank', N'Bình Thạnh'),
-	   ('4961813447012597', 'LAI AN PHU', N'Agribank', N'Tân Hương')
 
 INSERT PHONG (SOPHONG, LOAIPHONG, TINHTRANGLT, TRANGTHAIVS, MAKHUYENMAI)
-VALUES ('101', N'Bình thường', N'Trống', N'Chưa vệ sinh', NULL),
-		('102', N'Đặc biệt', N'Đặt trước', N'Đã vệ sinh', 'KM001'),
-		('103', N'Đặc biệt', N'Đặt trước', N'Đã vệ sinh', 'KM001'),
-
-INSERT HANGCHO(STT, MAYC, NGAYDAT)
-VALUES (1, 'YC001', '2020-01-12')
-
+VALUES ('101', N'Standard', N'Trống', N'Chưa vệ sinh', NULL),
+	   ('102', N'Superior', N'Đặt trước', N'Đã vệ sinh', 'KM001'),
+	   ('103', N'Deluxe', N'Trống', N'Đã vệ sinh', NULL),	
+	   ('104', N'Standard', N'Trống', N'Đã vệ sinh', NULL)
 
 INSERT YEUCAUDATPHONG (MAYC, MAKH, SOLUONG)
 VALUES ('YC001', 'KH003', 1)
 
+INSERT HANGCHO(STT, MAYC, NGAYDAT)
+VALUES (1, 'YC001', '2020-01-12')
+
 INSERT THONGTINDATPHONG(MADAT, MAYC, TRANGTHAI, THANHTIEN, NGAYDEN, SODEMLUUTRU, LOAIPHONG, YEUCAUDACBIET)
-VALUES ('DH001', 'YC001', N'', 15000000, '2020-01-12', 3, N'')
+VALUES ('DH001', 'YC001', N'Chờ thanh toán', 15000000, '2020-01-12', 5, N'Standard', N'Vệ sinh trước khi tôi tới')
 
 
-INSERT KHUYENMAITHEOPHONG(MAKHUYENMAI, SOPHONG, NOIDUNG)
-VALUES ('KM001', '101', N'')
+INSERT KHUYENMAITHEOPHONG(MAKHUYENMAI, NOIDUNG)
+VALUES ('KM001', N'Buffet sáng miễn phí'),
+	   ('KM002', N'Massage xông hơi cho 2 người'),
+	   ('KM003', N'Miễn phí sử dụng các phòng gym và bể bơi'),
+	   ('KM004', N'Miễn phí tất cả đồ ăn trong tủ lạnh')
+	   
 
 INSERT DANGKYVANCHUYENHANHLY (MADON , SOLUONG, SOPHONG)
-VALUES ()
+VALUES ('HL001', 2, '101')
 
 INSERT DICHVU (MADICHVU, TENDICHVU, GIATIEN, MOTA)
 VALUES ('DV001', N'Bơi lội', 50000, N'Hoạt động bơi lội ngoài trời rèn luyện nâng cao sức khỏe'),
 	   ('DV002', N'Gym', 100000, N'Hệ thống phòng gym với đầy đủ trang thiết bị'),
-	   ('DV003', N'Goft', 900000, N'Sân Goft sang trọng, đẳng cấp giới thượng lưu')
+	   ('DV003', N'Goft', 900000, N'Sân Goft sang trọng, đẳng cấp giới thượng lưu'),
+	   ('DV004', N'Buffet', 140000, N'Buffet với nhiều món ngon từ những đầu bếp nhiều năm kinh nghiệm'),
+	   ('DV005', N'Xông hơi', 120000, N'Thư giãn cùng với phòng xông hơi đạt chuẩn Quốc tế')
 
 INSERT TOURDULICH (MATOUR, DIADIEM, MOTA, THOIGIANKHOIHANH, DONVILUHANH)
-VALUES
+VALUES ('TOUR001', N'Phố cổ Hội An', N'Đắm chìm trong những nét cổ xưa', '2021-01-01', N'Travel VietNam'),
+	   ('TOUR002', N'Thành cổ Quảng Trị', N'Mùa hè đỏ lửa 1972', '2022-10-01', N'Saigon Tourist'),
+	   ('TOUR003', N'Vịnh Hạ Long', N'Danh lam thắng cảnh được UNESCO công nhận', '2022-01-10', N'Saigon Tourist'),
+	   ('TOUR004', N'Qui Nhơn', N'Hóa thân thành Hàn Mạc Tử', '2022-10-01', N'Saigon Tourist')
 
 INSERT HOADON (MAHD, MAKH, TONGTIEN)
-VALUES
+VALUES ('HD001', 'KH003', 15000000)
 
-INSERT CHITIETHOADON (MAHD, MACT, NGAYLAP, DICHVUSUDUNG, DONGIA, SOLUONG)
-VALUES
+INSERT CHITIETHOADON (MACT, MAHD, NGAYLAP, DICHVUSUDUNG, DONGIA, SOLUONG)
+VALUES ('CTHD001','HD001', '2020-07-12', 'DV002', 100000, 1)
 
 INSERT PHIEU (MAPHIEU, MAKH, NGAYLAP)
-VALUES
+VALUES ('PH001', 'KH003', '2020-04-12'),
+	   ('PH002', 'KH001', '2021-11-10')
+
 
 INSERT PHIEUDANGKYTOUR (MAPHIEU, TOURTHAMGIA, SOLUONGNGUOI, HINHTHUCDICHUYEN, YEUCAUDACBIET)
-VALUES
+VALUES ('PH001', 'TOUR001', 10, N'Tự túc', N'Có hướng dẫn viên riêng')
+
+
+INSERT PHIEUDANGKYDICHVU (MAPHIEU, NGAYSUDUNG, DICHVUSUDUNG)
+VALUES ('PH002', '2021-11-11', 'DV001')
+
+
+INSERT DANHSACHNHAXE (MANHAXE, TENNHAXE, SODT)
+VALUES ('NX001', N'Huệ Nghĩa', '+84 7147900717'),
+	   ('NX002', N'Phương Trang', '+84 7658214945'),
+	   ('NX003', N'Thành Bưởi', '+84 9797500081')
+
+INSERT TAIKHOAN(USERNAME, PASS, VAITRO, MANV)
+VALUES ('TK001', '123', 'Le Tan', 'NV001'),
+	   ('TK002', '123', 'Le Tan', 'NV002'),
+	   ('TK003', '123', 'Bellman', 'NV001'),
+	   ('TK004', '123', 'Bellman', 'NV001'),
+	   ('TK005', '123', 'Ke Toan', 'NV001'),
+	   ('TK006', '123', 'Ke Toan', 'NV001')

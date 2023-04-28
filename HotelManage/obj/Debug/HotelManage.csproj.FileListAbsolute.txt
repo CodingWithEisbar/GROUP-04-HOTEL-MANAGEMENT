@@ -47,3 +47,10 @@ C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelMana
 C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTourDuLich.resources
 C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuSuDungDichVu.resources
 C:\Users\Admin\Desktop\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuDangKyTourDuLich.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanBangGiaDichvu.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanKiemtraKhuyenmai.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanDashboard.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuDangKyTourDuLich.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuSuDungDichVu.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTourDuLich.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fCheckOut.resources

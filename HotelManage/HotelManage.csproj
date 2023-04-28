@@ -71,6 +71,12 @@
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\phong.cs" />
     <Compile Include="DTO\TourDuLich.cs" />
+    <Compile Include="fCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCheckOut.Designer.cs">
+      <DependentUpon>fCheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="fFormdangkithongtinvanchuyenhanhli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSachDichvu.resx">
       <DependentUpon>DanhSachDichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCheckOut.resx">
+      <DependentUpon>fCheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fFormdangkithongtinvanchuyenhanhli.resx">
       <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>

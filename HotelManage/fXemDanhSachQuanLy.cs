@@ -10,13 +10,12 @@ using System.Windows.Forms;
 
 namespace HotelManage
 {
-    public partial class fCheckOut : Form
+    public partial class fXemDanhSachQuanLy : Form
     {
-        public fCheckOut()
+        public fXemDanhSachQuanLy()
         {
             InitializeComponent();
         }
 
- 
     }
 }

@@ -83,6 +83,18 @@
     <Compile Include="fFormdangkithongtinvanchuyenhanhli.Designer.cs">
       <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>
     </Compile>
+    <Compile Include="fGhiNhanYKienKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGhiNhanYKienKH.Designer.cs">
+      <DependentUpon>fGhiNhanYKienKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGoiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGoiXe.Designer.cs">
+      <DependentUpon>fGoiXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLeTanKiemtraKhuyenmai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,18 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fXemDanhSachQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXemDanhSachQuanLy.Designer.cs">
+      <DependentUpon>fXemDanhSachQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXemTinhTrangPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXemTinhTrangPhong.Designer.cs">
+      <DependentUpon>fXemTinhTrangPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="KiemTraTinhTrangPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +168,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fFormdangkithongtinvanchuyenhanhli.resx">
       <DependentUpon>fFormdangkithongtinvanchuyenhanhli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGhiNhanYKienKH.resx">
+      <DependentUpon>fGhiNhanYKienKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGoiXe.resx">
+      <DependentUpon>fGoiXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLeTanBangGiaDichvu.resx">
       <DependentUpon>fLeTanBangGiaDichvu.cs</DependentUpon>
@@ -165,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXemDanhSachQuanLy.resx">
+      <DependentUpon>fXemDanhSachQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXemTinhTrangPhong.resx">
+      <DependentUpon>fXemTinhTrangPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KiemTraTinhTrangPhong.resx">
       <DependentUpon>KiemTraTinhTrangPhong.cs</DependentUpon>

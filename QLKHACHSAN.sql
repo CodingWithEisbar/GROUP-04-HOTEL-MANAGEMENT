@@ -354,7 +354,7 @@ FOREIGN KEY (MAKH) REFERENCES KHACHHANG (MAKH)
 
 ALTER TABLE TINHTRANGTRAPHONG
 ADD CONSTRAINT FK_TINHTRANGTRAPHONG_PHONG
-FOREIGN KEY (MAPHONG) REFERENCES PHONG(MAPHONG)
+FOREIGN KEY (MAPHONG) REFERENCES PHONG(SOPHONG)
 
 ALTER TABLE TINHTRANGTRAPHONG
 ADD CONSTRAINT FK_TINHTRANGTRAPHONG_BANGGIAVATDUNG
@@ -387,7 +387,8 @@ VALUES ('4849860728359294', 'TON THAT BACH', N'Vietcombank', N'Bình Thạnh'),
 INSERT KHACHHANG(MAKH, TENKH, DIACHI, SODT, SOFAX, EMAIL, CCCD, SOTHE, HINHTHUCTHANHTOAN)
 VALUES ('KH001', N'Tôn Thất Bách', N'740/15A Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh', '0339161316', '+84 24 123 4567', N'yokuneva@yahoo.com', '554926537264','4849860728359294', N'Thẻ tín dụng'),
 	   ('KH002', N'Nguyễn Trung Nguyên', N'Hẻm 320 Trần Bình Trọng, Phường 4, Quận 5, Thành phố Hồ Chí Minh', '0999837480', '+84 28 234 5678', N'jasetaylor@yt-google.com', '790856623849', NULL, N'Tiền mặt'),
-	   ('KH003', N'Lại An Phú', N'565 Lạc Long Quân, Phường 10, Tân Bình, Thành phố Hồ Chí Minh', '0374080895', '+84 236 345 6789', N'fkuhn@hotmail.com', '058411867415', '4961813447012597', N'Thẻ tín dụng')
+	   ('KH003', N'Lại An Phú', N'565 Lạc Long Quân, Phường 10, Tân Bình, Thành phố Hồ Chí Minh', '0374080895', '+84 236 345 6789', N'fkuhn@hotmail.com', '058411867415', '4961813447012597', N'Thẻ tín dụng'),
+	   ('KH004', N'Trần Mạnh Hùng', N'973 Lũy Bán Bích, Tân Thành, Tân Phú, Thành phố Hồ Chí Minh', '0374080899',  '+84 123 445 4564', N'tmhung@hotmail.com', '098411867123', NULL, N'Tiền mặt')
 
 INSERT KHACHHANGNHOM(MAKH, TENDOANKHACH, SONGUOI, NGAYDEN, SODEMLUUTRU)
 VALUES ('KH003', N'ĐH Khoa học Tự nhiên - ĐHQG TPHCM', 100, '2020-02-12', 5)
@@ -422,10 +423,13 @@ VALUES ('HL001', 2, '102')
 
 INSERT DICHVU (MADICHVU, TENDICHVU, GIATIEN, MOTA)
 VALUES ('DV001', N'Bơi lội', 50000, N'Hoạt động bơi lội ngoài trời rèn luyện nâng cao sức khỏe'),
-	   ('DV002', N'Gym', 100000, N'Hệ thống phòng gym với đầy đủ trang thiết bị'),
-	   ('DV003', N'Goft', 900000, N'Sân Goft sang trọng, đẳng cấp giới thượng lưu'),
-	   ('DV004', N'Buffet', 140000, N'Buffet với nhiều món ngon từ những đầu bếp nhiều năm kinh nghiệm'),
-	   ('DV005', N'Xông hơi', 120000, N'Thư giãn cùng với phòng xông hơi đạt chuẩn Quốc tế')
+	   ('DV002', N'Cầu lông', 100000, N'Hệ thống sân cầu lông đạt chuẩn Olympic'),
+	   ('DV003', N'Bóng chuyền', 100000, N'Sân Goft sang trọng, đẳng cấp giới thượng lưu'),
+	   ('DV004', N'Bóng rổ', 100000, N'Buffet với nhiều món ngon từ những đầu bếp nhiều năm kinh nghiệm'),
+	   ('DV005', N'Xông hơi', 120000, N'Thư giãn cùng với phòng xông hơi đạt chuẩn Quốc tế'),
+	   ('DV006', N'Goft', 900000, N'Phong cách sống thượng lưu'),
+	   ('DV007', N'Buffet', 120000, N'Nhiều món ngon được phục vụ bởi những đầu bếp nổi tiếng')
+
 
 INSERT TOURDULICH (MATOUR, DIADIEM, MOTA, THOIGIANKHOIHANH, DONVILUHANH)
 VALUES ('TOUR001', N'Phố cổ Hội An', N'Đắm chìm trong những nét cổ xưa', '2021-01-01', N'Travel VietNam'),
@@ -441,12 +445,12 @@ VALUES ('CTHD001','HD001', '2020-07-12', 'DV002', 100000, 1)
 
 INSERT PHIEU (MAPHIEU, MAKH, NGAYLAP)
 VALUES ('PH001', 'KH003', '2020-04-12'),
-	   ('PH002', 'KH001', '2021-11-10')
-
+	   ('PH002', 'KH001', '2021-11-10'),
+	   ('PH003', 'KH002', '2020-11-10')
 
 INSERT PHIEUDANGKYTOUR (MAPHIEU, TOURTHAMGIA, SOLUONGNGUOI, HINHTHUCDICHUYEN, YEUCAUDACBIET)
-VALUES ('PH001', 'TOUR001', 10, N'Tự túc', N'Có hướng dẫn viên riêng')
-
+VALUES ('PH001', 'TOUR001', 10, N'Tự túc', N'Có hướng dẫn viên riêng'),
+	   ('PH002', 'TOUR002', 2, N'Xe hợp đồng', NULL)
 
 INSERT PHIEUDANGKYDICHVU (MAPHIEU, NGAYSUDUNG, DICHVUSUDUNG)
 VALUES ('PH002', '2021-11-11', 'DV001')
@@ -474,4 +478,4 @@ VALUES ('VD001', N'Tivi', 4500000),
 
 
 INSERT TINHTRANGTRAPHONG(MABAOCAO, MAPHONG, MAKH, NGAYLAP, MAVATDUNGHUDAI, NOIDUNG, THANHTIEN)
-VALUES ('BC001', '102', '')
+VALUES ('BC001', '102', 'KH003', '2020-07-12', 'VD002', N'Gãy cánh cửa không rõ nguyên nhân', 2500000)

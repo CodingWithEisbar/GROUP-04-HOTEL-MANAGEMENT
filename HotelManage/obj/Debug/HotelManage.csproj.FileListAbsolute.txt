@@ -54,3 +54,7 @@ D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\Hotel
 D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTaoPhieuSuDungDichVu.resources
 D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fLeTanTourDuLich.resources
 D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fCheckOut.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fGhiNhanYKienKH.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fGoiXe.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fXemDanhSachQuanLy.resources
+D:\Bài tập lập trình\GROUP-04-HOTEL-MANAGEMENT\HotelManage\obj\Debug\HotelManage.fXemTinhTrangPhong.resources

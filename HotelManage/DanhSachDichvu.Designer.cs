@@ -41,9 +41,10 @@ namespace HotelManage
             // panel1
             // 
             this.panel1.Controls.Add(this.listView1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 426);
+            this.panel1.Size = new System.Drawing.Size(582, 346);
             this.panel1.TabIndex = 0;
             // 
             // listView1
@@ -54,9 +55,10 @@ namespace HotelManage
             this.columnHeader3,
             this.columnHeader4});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 3);
+            this.listView1.Location = new System.Drawing.Point(2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(770, 420);
+            this.listView1.Size = new System.Drawing.Size(578, 342);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -79,12 +81,13 @@ namespace HotelManage
             // 
             // DanhSachDichvu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DanhSachDichvu";
-            this.Text = "DanhSachDichvu";
+            this.Text = "Danh sách dịch vụ";
             this.Load += new System.EventHandler(this.DanhSachDichvu_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

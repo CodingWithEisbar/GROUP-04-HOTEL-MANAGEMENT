@@ -20,7 +20,7 @@ namespace HotelManage.DAO
         private AccountDAO() { }
         public bool Login(String username, string password,string role)
         {
-            string query = "select * from dbo.TAIKHOAN where USERNAME='" + username + "'AND  PASS= '" + password + "'AND VAITRO=N'"+role+"'  ";
+            string query = "select * from dbo.TAIKHOAN where USERNAME='" + username + "'AND  PASS= '" + password + "'AND VAITRO='"+role+"'  ";
             DataTable result = DataProvider.Instance.ExcuteQuery(query);
             return result.Rows.Count > 0;
         }

@@ -64,9 +64,10 @@ namespace HotelManage
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,7 +80,8 @@ namespace HotelManage
             this.dịchVụToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip2.Size = new System.Drawing.Size(600, 24);
             this.menuStrip2.TabIndex = 4;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
@@ -87,34 +89,35 @@ namespace HotelManage
             // kiểmTraTìnhTrạngPhòngToolStripMenuItem
             // 
             this.kiểmTraTìnhTrạngPhòngToolStripMenuItem.Name = "kiểmTraTìnhTrạngPhòngToolStripMenuItem";
-            this.kiểmTraTìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.kiểmTraTìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(156, 20);
             this.kiểmTraTìnhTrạngPhòngToolStripMenuItem.Text = "Kiểm tra tình trạng phòng";
             this.kiểmTraTìnhTrạngPhòngToolStripMenuItem.Click += new System.EventHandler(this.kiểmTraTìnhTrạngPhòngToolStripMenuItem_Click);
             // 
             // đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem
             // 
             this.đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem.Name = "đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem";
-            this.đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem.Size = new System.Drawing.Size(267, 24);
+            this.đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem.Size = new System.Drawing.Size(217, 20);
             this.đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem.Text = "Đăng kí thông tin vận chuyển hành lí ";
             this.đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem.Click += new System.EventHandler(this.đăngKíThôngTinVậnChuyểnHànhLíToolStripMenuItem_Click);
             // 
             // dịchVụToolStripMenuItem
             // 
             this.dịchVụToolStripMenuItem.Name = "dịchVụToolStripMenuItem";
-            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.dịchVụToolStripMenuItem.Text = "Dịch vụ ";
             this.dịchVụToolStripMenuItem.Click += new System.EventHandler(this.dịchVụToolStripMenuItem_Click);
             // 
             // BellmanDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BellmanDashboard";
-            this.Text = "BellmanDashboard";
+            this.Text = "Bellman Dashboard";
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);

@@ -20,13 +20,13 @@ namespace HotelManage.DAO
         private phongDAO() { }
         public DataTable getRoomPromotion(string roomNumber)
         {
-            return DataProvider.Instance.ExcuteQuery("SELECT * FROM KHUYENMAITHEOPHONG WHERE SOPHONG = '" + roomNumber + "'");
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM KHUYENMAITHEOPHONG WHERE SOPHONG = '" + roomNumber + "'");
         }
         public List<phong> checkStatus(string sophong)
         {
             List<phong> tablelist = new List<phong>();
             string query = "dbo.USP_kiemtratinhtrangvesinh " + "'" + sophong + "'" ;
-            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
             {

@@ -21,7 +21,7 @@ namespace HotelManage.DAO
         }
         public DataTable getClientInFormation(string name)
         {
-            return DataProvider.Instance.ExcuteQuery("SELECT * FROM KHACHHANG WHERE TENKH = N'" + name + "'");
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM KHACHHANG WHERE TENKH = N'" + name + "'");
         }
     }
 }

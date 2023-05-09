@@ -18,12 +18,7 @@ namespace HotelManage
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void cancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
 
@@ -37,7 +32,7 @@ namespace HotelManage
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
         {
             string role="";
             if (checkBox1.Checked) {
@@ -46,10 +41,10 @@ namespace HotelManage
             }
             if (LeTanCheckBox.Checked)
             {
-                role = "LT";
+                role = "Le Tan";
             }
-            string username = textBox1.Text;
-            string pass = textBox2.Text;
+            string username = userNameTextBox.Text;
+            string pass = passwordTextBox.Text;
             if (login(username, pass,role))
             {
                 if (checkBox1.Checked)

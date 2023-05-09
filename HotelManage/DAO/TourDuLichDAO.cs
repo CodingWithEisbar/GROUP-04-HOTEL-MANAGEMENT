@@ -21,7 +21,7 @@ namespace HotelManage.DAO
         }
         public DataTable getTourList()
         {
-            return DataProvider.Instance.ExcuteQuery("SELECT * FROM TOURDULICH");
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM TOURDULICH");
         }
     }
 }

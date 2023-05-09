@@ -32,18 +32,18 @@ namespace HotelManage
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.keToanCheckBox = new System.Windows.Forms.CheckBox();
             this.LeTanCheckBox = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.loginButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.Username = new System.Windows.Forms.Label();
-            this.keToanCheckBox = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,14 +55,24 @@ namespace HotelManage
             this.panel1.Controls.Add(this.LeTanCheckBox);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.cancelButton);
+            this.panel1.Controls.Add(this.loginButton);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(14, 15);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(966, 323);
             this.panel1.TabIndex = 0;
+            // 
+            // keToanCheckBox
+            // 
+            this.keToanCheckBox.AutoSize = true;
+            this.keToanCheckBox.Location = new System.Drawing.Point(108, 253);
+            this.keToanCheckBox.Name = "keToanCheckBox";
+            this.keToanCheckBox.Size = new System.Drawing.Size(90, 24);
+            this.keToanCheckBox.TabIndex = 8;
+            this.keToanCheckBox.Text = "Kế toán";
+            this.keToanCheckBox.UseVisualStyleBackColor = true;
             // 
             // LeTanCheckBox
             // 
@@ -94,41 +104,41 @@ namespace HotelManage
             this.label2.TabIndex = 5;
             this.label2.Text = "Vai trò";
             // 
-            // button2
+            // cancelButton
             // 
-            this.button2.Location = new System.Drawing.Point(844, 280);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 38);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cancelButton.Location = new System.Drawing.Point(844, 280);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(118, 38);
+            this.cancelButton.TabIndex = 3;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // button1
+            // loginButton
             // 
-            this.button1.Location = new System.Drawing.Point(720, 280);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Log In";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.loginButton.Location = new System.Drawing.Point(720, 280);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(118, 38);
+            this.loginButton.TabIndex = 2;
+            this.loginButton.Text = "Log In";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.passwordTextBox);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(3, 85);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(960, 74);
             this.panel3.TabIndex = 1;
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(844, 26);
-            this.textBox2.TabIndex = 2;
+            this.passwordTextBox.Location = new System.Drawing.Point(100, 17);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(844, 26);
+            this.passwordTextBox.TabIndex = 2;
             // 
             // label1
             // 
@@ -141,19 +151,19 @@ namespace HotelManage
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.userNameTextBox);
             this.panel2.Controls.Add(this.Username);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(960, 74);
             this.panel2.TabIndex = 0;
             // 
-            // textBox1
+            // userNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(838, 26);
-            this.textBox1.TabIndex = 1;
+            this.userNameTextBox.Location = new System.Drawing.Point(105, 17);
+            this.userNameTextBox.Name = "userNameTextBox";
+            this.userNameTextBox.Size = new System.Drawing.Size(838, 26);
+            this.userNameTextBox.TabIndex = 1;
             // 
             // Username
             // 
@@ -163,17 +173,6 @@ namespace HotelManage
             this.Username.Size = new System.Drawing.Size(83, 20);
             this.Username.TabIndex = 0;
             this.Username.Text = "Username";
-            this.Username.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // keToanCheckBox
-            // 
-            this.keToanCheckBox.AutoSize = true;
-            this.keToanCheckBox.Location = new System.Drawing.Point(108, 253);
-            this.keToanCheckBox.Name = "keToanCheckBox";
-            this.keToanCheckBox.Size = new System.Drawing.Size(90, 24);
-            this.keToanCheckBox.TabIndex = 8;
-            this.keToanCheckBox.Text = "Kế toán";
-            this.keToanCheckBox.UseVisualStyleBackColor = true;
             // 
             // fLogin
             // 
@@ -202,12 +201,12 @@ namespace HotelManage
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Username;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox userNameTextBox;
+        private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox LeTanCheckBox;
         private System.Windows.Forms.CheckBox checkBox1;

@@ -20,13 +20,13 @@ namespace HotelManage.DAO
         private DichvuDAO() { }
         public DataTable getServiceList()
         {
-            return DataProvider.Instance.ExcuteQuery("SELECT * FROM DICHVU");
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM DICHVU");
         }
         public List<Dichvu> laydanhsachdichvu()
         {
             List<Dichvu> tablelist = new List<Dichvu>();
             string query = "dbo.USP_laydanhsachdichvu" ;
-            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
             {

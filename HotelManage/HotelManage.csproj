@@ -59,6 +59,7 @@
       <DependentUpon>DanhSachDichvu.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DanhSachNhaXeDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DichvuDAO.cs" />
     <Compile Include="DAO\dichvuvanvhuyenhanhliDAO.cs" />
@@ -66,7 +67,9 @@
     <Compile Include="DAO\PhieuDangKyTourDulichDAO.cs" />
     <Compile Include="DAO\PhieuSuDungDVDAO.cs" />
     <Compile Include="DAO\phongDAO.cs" />
+    <Compile Include="DAO\quanLyDichVuDAO.cs" />
     <Compile Include="DAO\TourDuLichDAO.cs" />
+    <Compile Include="DTO\DanhSachNhaXe.cs" />
     <Compile Include="DTO\Dichvu.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\phong.cs" />

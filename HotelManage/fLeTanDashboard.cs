@@ -46,5 +46,11 @@ namespace HotelManage
             fLeTanTaoPhieuDangKyTourDuLich f = new fLeTanTaoPhieuDangKyTourDuLich();
             f.ShowDialog();
         }
+
+        private void checkOutMenuItem_Click(object sender, EventArgs e)
+        {
+            fCheckOut f = new fCheckOut();
+            f.ShowDialog();
+        }
     }
 }

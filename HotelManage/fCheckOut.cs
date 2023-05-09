@@ -16,5 +16,15 @@ namespace HotelManage
         {
             InitializeComponent();
         }
+
+        private void xemDanhSachQuanLyButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backButt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

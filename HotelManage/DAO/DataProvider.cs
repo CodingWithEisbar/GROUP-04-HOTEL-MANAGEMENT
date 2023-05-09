@@ -19,7 +19,7 @@ namespace HotelManage.DAO
         }
         private static string host_name = System.Windows.Forms.SystemInformation.ComputerName;
         private string conntstr = "Data Source= " + host_name +";Initial Catalog=QLKHACHSAN;Integrated Security=True";//thay doi cho phu hop voi db
-        public DataTable ExcuteQuery(string query, object[] parameter = null)
+        public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(conntstr))

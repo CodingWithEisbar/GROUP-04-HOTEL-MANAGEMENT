@@ -40,44 +40,49 @@
             // 
             this.customerNameLabel.AutoSize = true;
             this.customerNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerNameLabel.Location = new System.Drawing.Point(77, 103);
+            this.customerNameLabel.Location = new System.Drawing.Point(51, 67);
+            this.customerNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.customerNameLabel.Name = "customerNameLabel";
-            this.customerNameLabel.Size = new System.Drawing.Size(164, 25);
+            this.customerNameLabel.Size = new System.Drawing.Size(117, 17);
             this.customerNameLabel.TabIndex = 0;
             this.customerNameLabel.Text = "Tên Khách hàng:";
             // 
             // customerNameTextbox
             // 
             this.customerNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerNameTextbox.Location = new System.Drawing.Point(247, 98);
+            this.customerNameTextbox.Location = new System.Drawing.Point(165, 64);
+            this.customerNameTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customerNameTextbox.Name = "customerNameTextbox";
-            this.customerNameTextbox.Size = new System.Drawing.Size(360, 30);
+            this.customerNameTextbox.Size = new System.Drawing.Size(241, 23);
             this.customerNameTextbox.TabIndex = 1;
             // 
             // customerFeedbackLabel
             // 
             this.customerFeedbackLabel.AutoSize = true;
             this.customerFeedbackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerFeedbackLabel.Location = new System.Drawing.Point(77, 166);
+            this.customerFeedbackLabel.Location = new System.Drawing.Point(51, 108);
+            this.customerFeedbackLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.customerFeedbackLabel.Name = "customerFeedbackLabel";
-            this.customerFeedbackLabel.Size = new System.Drawing.Size(159, 25);
+            this.customerFeedbackLabel.Size = new System.Drawing.Size(115, 17);
             this.customerFeedbackLabel.TabIndex = 2;
             this.customerFeedbackLabel.Text = "Ý kiến đóng góp:";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(82, 207);
+            this.textBox1.Location = new System.Drawing.Point(55, 135);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(525, 139);
+            this.textBox1.Size = new System.Drawing.Size(351, 92);
             this.textBox1.TabIndex = 3;
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(12, 9);
+            this.backButton.Location = new System.Drawing.Point(8, 6);
+            this.backButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(137, 52);
+            this.backButton.Size = new System.Drawing.Size(91, 34);
             this.backButton.TabIndex = 5;
             this.backButton.Text = "Quay lại";
             this.backButton.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // 
             // sendFeedbackButton
             // 
-            this.sendFeedbackButton.Location = new System.Drawing.Point(267, 373);
+            this.sendFeedbackButton.Location = new System.Drawing.Point(178, 242);
+            this.sendFeedbackButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sendFeedbackButton.Name = "sendFeedbackButton";
-            this.sendFeedbackButton.Size = new System.Drawing.Size(137, 52);
+            this.sendFeedbackButton.Size = new System.Drawing.Size(91, 34);
             this.sendFeedbackButton.TabIndex = 4;
             this.sendFeedbackButton.Text = "Gửi";
             this.sendFeedbackButton.UseVisualStyleBackColor = true;
@@ -95,16 +101,18 @@
             // 
             // fGhiNhanYKienKH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 482);
+            this.ClientSize = new System.Drawing.Size(473, 313);
             this.Controls.Add(this.sendFeedbackButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.customerFeedbackLabel);
             this.Controls.Add(this.customerNameTextbox);
             this.Controls.Add(this.customerNameLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fGhiNhanYKienKH";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ghi nhận ý kiến khách hàng";
             this.ResumeLayout(false);
             this.PerformLayout();

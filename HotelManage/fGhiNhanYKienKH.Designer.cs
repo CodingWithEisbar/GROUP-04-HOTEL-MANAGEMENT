@@ -78,18 +78,20 @@
             this.backButton.Location = new System.Drawing.Point(12, 9);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(137, 52);
-            this.backButton.TabIndex = 4;
+            this.backButton.TabIndex = 5;
             this.backButton.Text = "Quay lại";
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // sendFeedbackButton
             // 
             this.sendFeedbackButton.Location = new System.Drawing.Point(267, 373);
             this.sendFeedbackButton.Name = "sendFeedbackButton";
             this.sendFeedbackButton.Size = new System.Drawing.Size(137, 52);
-            this.sendFeedbackButton.TabIndex = 5;
+            this.sendFeedbackButton.TabIndex = 4;
             this.sendFeedbackButton.Text = "Gửi";
             this.sendFeedbackButton.UseVisualStyleBackColor = true;
+            this.sendFeedbackButton.Click += new System.EventHandler(this.sendFeedbackButton_Click);
             // 
             // fGhiNhanYKienKH
             // 
@@ -103,7 +105,7 @@
             this.Controls.Add(this.customerNameTextbox);
             this.Controls.Add(this.customerNameLabel);
             this.Name = "fGhiNhanYKienKH";
-            this.Text = "fGhiNhanYKienKH";
+            this.Text = "Ghi nhận ý kiến khách hàng";
             this.ResumeLayout(false);
             this.PerformLayout();
 

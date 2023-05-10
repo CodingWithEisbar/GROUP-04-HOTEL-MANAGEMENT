@@ -63,6 +63,7 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DichvuDAO.cs" />
     <Compile Include="DAO\dichvuvanvhuyenhanhliDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\KhachhangDAO.cs" />
     <Compile Include="DAO\PhieuDangKyTourDulichDAO.cs" />
     <Compile Include="DAO\PhieuSuDungDVDAO.cs" />
@@ -71,9 +72,16 @@
     <Compile Include="DAO\TourDuLichDAO.cs" />
     <Compile Include="DTO\DanhSachNhaXe.cs" />
     <Compile Include="DTO\Dichvu.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\phong.cs" />
     <Compile Include="DTO\TourDuLich.cs" />
+    <Compile Include="fCapNhatTinhTrangPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCapNhatTinhTrangPhong.Designer.cs">
+      <DependentUpon>fCapNhatTinhTrangPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="fCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +99,12 @@
     </Compile>
     <Compile Include="fGhiNhanYKienKH.Designer.cs">
       <DependentUpon>fGhiNhanYKienKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGoiDienThoaiChoNhaXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGoiDienThoaiChoNhaXe.Designer.cs">
+      <DependentUpon>fGoiDienThoaiChoNhaXe.cs</DependentUpon>
     </Compile>
     <Compile Include="fGoiXe.cs">
       <SubType>Form</SubType>
@@ -146,6 +160,12 @@
     <Compile Include="fXemDanhSachQuanLy.Designer.cs">
       <DependentUpon>fXemDanhSachQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="fXemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXemHoaDon.Designer.cs">
+      <DependentUpon>fXemHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="fXemTinhTrangPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +186,9 @@
     <EmbeddedResource Include="DanhSachDichvu.resx">
       <DependentUpon>DanhSachDichvu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fCapNhatTinhTrangPhong.resx">
+      <DependentUpon>fCapNhatTinhTrangPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fCheckOut.resx">
       <DependentUpon>fCheckOut.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fGhiNhanYKienKH.resx">
       <DependentUpon>fGhiNhanYKienKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGoiDienThoaiChoNhaXe.resx">
+      <DependentUpon>fGoiDienThoaiChoNhaXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fGoiXe.resx">
       <DependentUpon>fGoiXe.cs</DependentUpon>
@@ -201,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fXemDanhSachQuanLy.resx">
       <DependentUpon>fXemDanhSachQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXemHoaDon.resx">
+      <DependentUpon>fXemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fXemTinhTrangPhong.resx">
       <DependentUpon>fXemTinhTrangPhong.cs</DependentUpon>

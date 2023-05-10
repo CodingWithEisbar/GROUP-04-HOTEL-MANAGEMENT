@@ -28,82 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.callTaxiLabel = new System.Windows.Forms.Label();
-            this.taxiCompanyList = new System.Windows.Forms.ListView();
             this.backButt = new System.Windows.Forms.Button();
             this.callTaxiButt = new System.Windows.Forms.Button();
-            this.sendMessageButt = new System.Windows.Forms.Button();
+            this.danhSachCacNhaXeLabel = new System.Windows.Forms.Label();
+            this.nhaXeDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.nhaXeDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // callTaxiLabel
-            // 
-            this.callTaxiLabel.AutoSize = true;
-            this.callTaxiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.callTaxiLabel.Location = new System.Drawing.Point(200, 78);
-            this.callTaxiLabel.Name = "callTaxiLabel";
-            this.callTaxiLabel.Size = new System.Drawing.Size(514, 46);
-            this.callTaxiLabel.TabIndex = 0;
-            this.callTaxiLabel.Text = "DANH SÁCH CÁC NHÀ XE";
-            // 
-            // taxiCompanyList
-            // 
-            this.taxiCompanyList.HideSelection = false;
-            this.taxiCompanyList.Location = new System.Drawing.Point(12, 143);
-            this.taxiCompanyList.Name = "taxiCompanyList";
-            this.taxiCompanyList.Size = new System.Drawing.Size(920, 300);
-            this.taxiCompanyList.TabIndex = 1;
-            this.taxiCompanyList.UseCompatibleStateImageBehavior = false;
             // 
             // backButt
             // 
             this.backButt.Location = new System.Drawing.Point(12, 12);
             this.backButt.Name = "backButt";
-            this.backButt.Size = new System.Drawing.Size(134, 50);
+            this.backButt.Size = new System.Drawing.Size(134, 49);
             this.backButt.TabIndex = 2;
             this.backButt.Text = "Quay lại";
             this.backButt.UseVisualStyleBackColor = true;
+            this.backButt.Click += new System.EventHandler(this.backButt_Click);
             // 
             // callTaxiButt
             // 
-            this.callTaxiButt.Location = new System.Drawing.Point(798, 470);
+            this.callTaxiButt.Location = new System.Drawing.Point(798, 471);
             this.callTaxiButt.Name = "callTaxiButt";
-            this.callTaxiButt.Size = new System.Drawing.Size(134, 50);
+            this.callTaxiButt.Size = new System.Drawing.Size(134, 49);
             this.callTaxiButt.TabIndex = 3;
             this.callTaxiButt.Text = "Gọi";
             this.callTaxiButt.UseVisualStyleBackColor = true;
+            this.callTaxiButt.Click += new System.EventHandler(this.callTaxiButt_Click);
             // 
-            // sendMessageButt
+            // danhSachCacNhaXeLabel
             // 
-            this.sendMessageButt.Location = new System.Drawing.Point(658, 470);
-            this.sendMessageButt.Name = "sendMessageButt";
-            this.sendMessageButt.Size = new System.Drawing.Size(134, 50);
-            this.sendMessageButt.TabIndex = 4;
-            this.sendMessageButt.Text = "Nhắn tin";
-            this.sendMessageButt.UseVisualStyleBackColor = true;
+            this.danhSachCacNhaXeLabel.AutoSize = true;
+            this.danhSachCacNhaXeLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.danhSachCacNhaXeLabel.Location = new System.Drawing.Point(290, 71);
+            this.danhSachCacNhaXeLabel.Name = "danhSachCacNhaXeLabel";
+            this.danhSachCacNhaXeLabel.Size = new System.Drawing.Size(363, 33);
+            this.danhSachCacNhaXeLabel.TabIndex = 13;
+            this.danhSachCacNhaXeLabel.Text = "DANH SÁCH CÁC NHÀ XE";
+            // 
+            // nhaXeDataGridView
+            // 
+            this.nhaXeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.nhaXeDataGridView.Location = new System.Drawing.Point(12, 111);
+            this.nhaXeDataGridView.Name = "nhaXeDataGridView";
+            this.nhaXeDataGridView.RowHeadersWidth = 62;
+            this.nhaXeDataGridView.RowTemplate.Height = 28;
+            this.nhaXeDataGridView.Size = new System.Drawing.Size(920, 352);
+            this.nhaXeDataGridView.TabIndex = 14;
             // 
             // fGoiXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 550);
-            this.Controls.Add(this.sendMessageButt);
+            this.ClientSize = new System.Drawing.Size(944, 551);
+            this.Controls.Add(this.nhaXeDataGridView);
+            this.Controls.Add(this.danhSachCacNhaXeLabel);
             this.Controls.Add(this.callTaxiButt);
             this.Controls.Add(this.backButt);
-            this.Controls.Add(this.taxiCompanyList);
-            this.Controls.Add(this.callTaxiLabel);
             this.Name = "fGoiXe";
             this.Text = "Gọi xe cho khách";
+            ((System.ComponentModel.ISupportInitialize)(this.nhaXeDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label callTaxiLabel;
-        private System.Windows.Forms.ListView taxiCompanyList;
         private System.Windows.Forms.Button backButt;
         private System.Windows.Forms.Button callTaxiButt;
-        private System.Windows.Forms.Button sendMessageButt;
+        private System.Windows.Forms.Label danhSachCacNhaXeLabel;
+        private System.Windows.Forms.DataGridView nhaXeDataGridView;
     }
 }

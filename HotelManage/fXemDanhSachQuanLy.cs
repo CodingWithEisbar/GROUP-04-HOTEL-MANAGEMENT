@@ -15,6 +15,7 @@ namespace HotelManage
     public partial class fXemDanhSachQuanLy : Form
     {
         BindingSource ServiceUsingList = new BindingSource();
+
         public fXemDanhSachQuanLy()
         {
             InitializeComponent();
@@ -22,17 +23,9 @@ namespace HotelManage
             ServiceUsingList.DataSource = ServiceUsingList;
         }
 
-        private void fCheckOut()
-        {
-            Application.Run(new fCheckOut());
-        }
-
         private void backButt_Click(object sender, EventArgs e)
         {
-            Thread t;
             this.Close();
-            t = new Thread(fCheckOut);
-            t.Start();
         }
     }
     

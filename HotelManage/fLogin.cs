@@ -21,7 +21,6 @@ namespace HotelManage
         private void cancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
         }
 
         private void fLogin_FormClosing(object sender, FormClosingEventArgs e)

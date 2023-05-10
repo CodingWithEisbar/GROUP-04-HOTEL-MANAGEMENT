@@ -35,9 +35,8 @@
             this.ghiNhanYKienButton = new System.Windows.Forms.Button();
             this.goiXeButton = new System.Windows.Forms.Button();
             this.backButt = new System.Windows.Forms.Button();
-            this.maKHLabel = new System.Windows.Forms.Label();
             this.hienThiMaKHLabel = new System.Windows.Forms.Label();
-            this.finishButton = new System.Windows.Forms.Button();
+            this.checkOutLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // xemDanhSachQuanLyButton
@@ -58,6 +57,7 @@
             this.tinhTrangPhongButton.TabIndex = 1;
             this.tinhTrangPhongButton.Text = "Xem tình trạng phòng";
             this.tinhTrangPhongButton.UseVisualStyleBackColor = true;
+            this.tinhTrangPhongButton.Click += new System.EventHandler(this.tinhTrangPhongButton_Click);
             // 
             // xemHoaDonButton
             // 
@@ -67,6 +67,7 @@
             this.xemHoaDonButton.TabIndex = 2;
             this.xemHoaDonButton.Text = "Xem hóa đơn";
             this.xemHoaDonButton.UseVisualStyleBackColor = true;
+            this.xemHoaDonButton.Click += new System.EventHandler(this.xemHoaDonButton_Click);
             // 
             // capNhatTinhTrangPhongButton
             // 
@@ -76,6 +77,7 @@
             this.capNhatTinhTrangPhongButton.TabIndex = 3;
             this.capNhatTinhTrangPhongButton.Text = "Cập nhật tình trạng phòng";
             this.capNhatTinhTrangPhongButton.UseVisualStyleBackColor = true;
+            this.capNhatTinhTrangPhongButton.Click += new System.EventHandler(this.capNhatTinhTrangPhongButton_Click);
             // 
             // ghiNhanYKienButton
             // 
@@ -85,6 +87,7 @@
             this.ghiNhanYKienButton.TabIndex = 4;
             this.ghiNhanYKienButton.Text = "Ghi nhận ý kiến khách hàng";
             this.ghiNhanYKienButton.UseVisualStyleBackColor = true;
+            this.ghiNhanYKienButton.Click += new System.EventHandler(this.ghiNhanYKienButton_Click);
             // 
             // goiXeButton
             // 
@@ -94,6 +97,7 @@
             this.goiXeButton.TabIndex = 5;
             this.goiXeButton.Text = "Gọi xe";
             this.goiXeButton.UseVisualStyleBackColor = true;
+            this.goiXeButton.Click += new System.EventHandler(this.goiXeButton_Click);
             // 
             // backButt
             // 
@@ -105,17 +109,6 @@
             this.backButt.UseVisualStyleBackColor = true;
             this.backButt.Click += new System.EventHandler(this.backButt_Click);
             // 
-            // maKHLabel
-            // 
-            this.maKHLabel.AutoSize = true;
-            this.maKHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maKHLabel.Location = new System.Drawing.Point(18, 131);
-            this.maKHLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maKHLabel.Name = "maKHLabel";
-            this.maKHLabel.Size = new System.Drawing.Size(153, 25);
-            this.maKHLabel.TabIndex = 7;
-            this.maKHLabel.Text = "Mã khách hàng:";
-            // 
             // hienThiMaKHLabel
             // 
             this.hienThiMaKHLabel.AutoSize = true;
@@ -126,23 +119,23 @@
             this.hienThiMaKHLabel.Size = new System.Drawing.Size(0, 25);
             this.hienThiMaKHLabel.TabIndex = 8;
             // 
-            // finishButton
+            // checkOutLabel
             // 
-            this.finishButton.Location = new System.Drawing.Point(1110, 468);
-            this.finishButton.Name = "finishButton";
-            this.finishButton.Size = new System.Drawing.Size(134, 49);
-            this.finishButton.TabIndex = 9;
-            this.finishButton.Text = "Hoàn tất";
-            this.finishButton.UseVisualStyleBackColor = true;
+            this.checkOutLabel.AutoSize = true;
+            this.checkOutLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkOutLabel.Location = new System.Drawing.Point(535, 126);
+            this.checkOutLabel.Name = "checkOutLabel";
+            this.checkOutLabel.Size = new System.Drawing.Size(173, 33);
+            this.checkOutLabel.TabIndex = 13;
+            this.checkOutLabel.Text = "CHECKOUT";
             // 
             // fCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 534);
-            this.Controls.Add(this.finishButton);
+            this.Controls.Add(this.checkOutLabel);
             this.Controls.Add(this.hienThiMaKHLabel);
-            this.Controls.Add(this.maKHLabel);
             this.Controls.Add(this.backButt);
             this.Controls.Add(this.goiXeButton);
             this.Controls.Add(this.ghiNhanYKienButton);
@@ -166,8 +159,7 @@
         private System.Windows.Forms.Button ghiNhanYKienButton;
         private System.Windows.Forms.Button goiXeButton;
         private System.Windows.Forms.Button backButt;
-        private System.Windows.Forms.Label maKHLabel;
         private System.Windows.Forms.Label hienThiMaKHLabel;
-        private System.Windows.Forms.Button finishButton;
+        private System.Windows.Forms.Label checkOutLabel;
     }
 }

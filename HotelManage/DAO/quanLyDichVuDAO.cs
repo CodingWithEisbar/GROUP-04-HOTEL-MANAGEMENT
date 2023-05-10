@@ -20,7 +20,7 @@ namespace HotelManage.DAO
         public DataTable getServiceList()
         {
             // Xem danh sách các khách hàng và dịch vụ mà họ sử dụng
-            return DataProvider.Instance.ExecuteQuery("SELECT * FROM ");
+            return DataProvider.Instance.ExecuteQuery("USP_QuanLyDichVuKhachHangSuDung");
         }
         
     }

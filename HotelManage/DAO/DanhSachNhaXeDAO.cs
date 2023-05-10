@@ -20,7 +20,7 @@ namespace HotelManage.DAO
         private DanhSachNhaXeDAO() { }
         public DataTable getStationList()
         {
-            return DataProvider.Instance.ExecuteQuery("SELECT * FROM DANHSACHNHAXE");
+            return DataProvider.Instance.ExecuteQuery("SELECT MANHAXE AS N'Mã nhà xe', TENNHAXE AS N'Tên nhà xe', SODT AS N'Số điện thoại' FROM DANHSACHNHAXE");
         }
 
         public List<DanhSachNhaXe> layDanhSachDichVu() 
@@ -30,7 +30,10 @@ namespace HotelManage.DAO
             DataTable data = DataProvider.Instance.ExecuteQuery(sql_query);
 
             foreach (DataRow item in data.Rows) 
-            { 
+            {
+                DanhSachNhaXe table = new DanhSachNhaXe(item);
+                danhSachNhaXe.Add(table);  
+
             }
 
             return danhSachNhaXe;

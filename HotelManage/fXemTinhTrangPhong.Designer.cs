@@ -32,7 +32,9 @@
             this.roomIDTextbox = new System.Windows.Forms.TextBox();
             this.backButt = new System.Windows.Forms.Button();
             this.roomIDLabel = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.tinhTrangPhongDataGridView = new System.Windows.Forms.DataGridView();
+            this.xemTinhTrangPhongLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.tinhTrangPhongDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // searchButton
@@ -60,6 +62,7 @@
             this.backButt.TabIndex = 7;
             this.backButt.Text = "Quay lại";
             this.backButt.UseVisualStyleBackColor = true;
+            this.backButt.Click += new System.EventHandler(this.backButt_Click);
             // 
             // roomIDLabel
             // 
@@ -71,27 +74,40 @@
             this.roomIDLabel.TabIndex = 6;
             this.roomIDLabel.Text = "Mã phòng: ";
             // 
-            // listView1
+            // tinhTrangPhongDataGridView
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(43, 180);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(862, 249);
-            this.listView1.TabIndex = 10;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.tinhTrangPhongDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tinhTrangPhongDataGridView.Location = new System.Drawing.Point(12, 180);
+            this.tinhTrangPhongDataGridView.Name = "tinhTrangPhongDataGridView";
+            this.tinhTrangPhongDataGridView.RowHeadersWidth = 62;
+            this.tinhTrangPhongDataGridView.RowTemplate.Height = 28;
+            this.tinhTrangPhongDataGridView.Size = new System.Drawing.Size(919, 309);
+            this.tinhTrangPhongDataGridView.TabIndex = 10;
+            // 
+            // xemTinhTrangPhongLabel
+            // 
+            this.xemTinhTrangPhongLabel.AutoSize = true;
+            this.xemTinhTrangPhongLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xemTinhTrangPhongLabel.Location = new System.Drawing.Point(307, 70);
+            this.xemTinhTrangPhongLabel.Name = "xemTinhTrangPhongLabel";
+            this.xemTinhTrangPhongLabel.Size = new System.Drawing.Size(369, 33);
+            this.xemTinhTrangPhongLabel.TabIndex = 12;
+            this.xemTinhTrangPhongLabel.Text = "XEM TÌNH TRẠNG PHÒNG";
             // 
             // fXemTinhTrangPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 501);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.xemTinhTrangPhongLabel);
+            this.Controls.Add(this.tinhTrangPhongDataGridView);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.roomIDTextbox);
             this.Controls.Add(this.backButt);
             this.Controls.Add(this.roomIDLabel);
             this.Name = "fXemTinhTrangPhong";
             this.Text = "Xem tình trạng phòng";
+            ((System.ComponentModel.ISupportInitialize)(this.tinhTrangPhongDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +119,7 @@
         private System.Windows.Forms.TextBox roomIDTextbox;
         private System.Windows.Forms.Button backButt;
         private System.Windows.Forms.Label roomIDLabel;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.DataGridView tinhTrangPhongDataGridView;
+        private System.Windows.Forms.Label xemTinhTrangPhongLabel;
     }
 }

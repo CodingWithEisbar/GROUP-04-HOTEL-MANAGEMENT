@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManage.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,11 @@ using System.Windows.Forms;
 
 namespace HotelManage
 {
-    public partial class fXemTinhTrangPhong : Form
+    public partial class fXemHoaDon : Form
     {
-        public fXemTinhTrangPhong()
+        BindingSource invoiceList = new BindingSource();
+
+        public fXemHoaDon()
         {
             InitializeComponent();
         }
@@ -20,6 +23,13 @@ namespace HotelManage
         private void backButt_Click(object sender, EventArgs e)
         {
             this.Close();
+
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string customerName = customerNameTextbox.Text;
+            invoiceList.DataSource = HoaDonDAO.Instance.getInvoiceList(customerName);
         }
     }
 }

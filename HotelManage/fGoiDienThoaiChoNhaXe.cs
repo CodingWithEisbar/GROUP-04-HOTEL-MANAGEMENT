@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace HotelManage
 {
-    public partial class fXemTinhTrangPhong : Form
+    public partial class fGoiDienThoaiChoNhaXe : Form
     {
-        public fXemTinhTrangPhong()
+        public fGoiDienThoaiChoNhaXe()
         {
             InitializeComponent();
         }
 
-        private void backButt_Click(object sender, EventArgs e)
+        private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

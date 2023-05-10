@@ -33,6 +33,7 @@
             this.roomIDTextbox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.danhSachQuanLyDataGridView = new System.Windows.Forms.DataGridView();
+            this.xemTinhTrangPhongLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachQuanLyDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,11 +84,23 @@
             this.danhSachQuanLyDataGridView.Size = new System.Drawing.Size(915, 351);
             this.danhSachQuanLyDataGridView.TabIndex = 6;
             // 
+            // xemTinhTrangPhongLabel
+            // 
+            this.xemTinhTrangPhongLabel.AutoSize = true;
+            this.xemTinhTrangPhongLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xemTinhTrangPhongLabel.Location = new System.Drawing.Point(162, 66);
+            this.xemTinhTrangPhongLabel.Name = "xemTinhTrangPhongLabel";
+            this.xemTinhTrangPhongLabel.Size = new System.Drawing.Size(642, 33);
+            this.xemTinhTrangPhongLabel.TabIndex = 13;
+            this.xemTinhTrangPhongLabel.Text = "DANH SÁCH DỊCH VỤ KHÁCH HÀNG SỬ DỤNG";
+            // 
             // fXemDanhSachQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(951, 545);
+            this.Controls.Add(this.xemTinhTrangPhongLabel);
             this.Controls.Add(this.danhSachQuanLyDataGridView);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.roomIDTextbox);
@@ -108,5 +121,6 @@
         private System.Windows.Forms.TextBox roomIDTextbox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.DataGridView danhSachQuanLyDataGridView;
+        private System.Windows.Forms.Label xemTinhTrangPhongLabel;
     }
 }

@@ -20,7 +20,7 @@ namespace HotelManage
             InitializeComponent();
             string roomID = roomIDTextbox.Text;
             tinhTrangPhongDataGridView.DataSource = roomReturnStatus;
-            roomReturnStatus.DataSource = PhongDAO.Instance.getRoomReturnStatus(roomID);
+            roomReturnStatus.DataSource = TinhTrangPhongDAO.Instance.getRoomReturnStatus(roomID);
         }
 
         private void backButt_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace HotelManage
         private void searchButton_Click(object sender, EventArgs e)
         {
             string roomID = roomIDTextbox.Text;
-            roomReturnStatus.DataSource = PhongDAO.Instance.getRoomReturnStatus(roomID);
+            roomReturnStatus.DataSource = TinhTrangPhongDAO.Instance.getRoomReturnStatus(roomID);
         }
     }
 }

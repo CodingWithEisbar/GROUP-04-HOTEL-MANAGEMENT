@@ -41,9 +41,10 @@
             // 
             // xemDanhSachQuanLyButton
             // 
-            this.xemDanhSachQuanLyButton.Location = new System.Drawing.Point(16, 186);
+            this.xemDanhSachQuanLyButton.Location = new System.Drawing.Point(11, 121);
+            this.xemDanhSachQuanLyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.xemDanhSachQuanLyButton.Name = "xemDanhSachQuanLyButton";
-            this.xemDanhSachQuanLyButton.Size = new System.Drawing.Size(608, 55);
+            this.xemDanhSachQuanLyButton.Size = new System.Drawing.Size(405, 36);
             this.xemDanhSachQuanLyButton.TabIndex = 0;
             this.xemDanhSachQuanLyButton.Text = "Các dịch vụ khách hàng sử dụng";
             this.xemDanhSachQuanLyButton.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // 
             // tinhTrangPhongButton
             // 
-            this.tinhTrangPhongButton.Location = new System.Drawing.Point(634, 186);
+            this.tinhTrangPhongButton.Location = new System.Drawing.Point(423, 121);
+            this.tinhTrangPhongButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tinhTrangPhongButton.Name = "tinhTrangPhongButton";
-            this.tinhTrangPhongButton.Size = new System.Drawing.Size(608, 55);
+            this.tinhTrangPhongButton.Size = new System.Drawing.Size(405, 36);
             this.tinhTrangPhongButton.TabIndex = 1;
             this.tinhTrangPhongButton.Text = "Xem tình trạng phòng";
             this.tinhTrangPhongButton.UseVisualStyleBackColor = true;
@@ -61,9 +63,10 @@
             // 
             // xemHoaDonButton
             // 
-            this.xemHoaDonButton.Location = new System.Drawing.Point(16, 248);
+            this.xemHoaDonButton.Location = new System.Drawing.Point(11, 161);
+            this.xemHoaDonButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.xemHoaDonButton.Name = "xemHoaDonButton";
-            this.xemHoaDonButton.Size = new System.Drawing.Size(608, 55);
+            this.xemHoaDonButton.Size = new System.Drawing.Size(405, 36);
             this.xemHoaDonButton.TabIndex = 2;
             this.xemHoaDonButton.Text = "Xem hóa đơn";
             this.xemHoaDonButton.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // 
             // capNhatTinhTrangPhongButton
             // 
-            this.capNhatTinhTrangPhongButton.Location = new System.Drawing.Point(634, 248);
+            this.capNhatTinhTrangPhongButton.Location = new System.Drawing.Point(423, 161);
+            this.capNhatTinhTrangPhongButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.capNhatTinhTrangPhongButton.Name = "capNhatTinhTrangPhongButton";
-            this.capNhatTinhTrangPhongButton.Size = new System.Drawing.Size(608, 55);
+            this.capNhatTinhTrangPhongButton.Size = new System.Drawing.Size(405, 36);
             this.capNhatTinhTrangPhongButton.TabIndex = 3;
             this.capNhatTinhTrangPhongButton.Text = "Cập nhật tình trạng phòng";
             this.capNhatTinhTrangPhongButton.UseVisualStyleBackColor = true;
@@ -81,9 +85,10 @@
             // 
             // ghiNhanYKienButton
             // 
-            this.ghiNhanYKienButton.Location = new System.Drawing.Point(16, 309);
+            this.ghiNhanYKienButton.Location = new System.Drawing.Point(11, 201);
+            this.ghiNhanYKienButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ghiNhanYKienButton.Name = "ghiNhanYKienButton";
-            this.ghiNhanYKienButton.Size = new System.Drawing.Size(608, 55);
+            this.ghiNhanYKienButton.Size = new System.Drawing.Size(405, 36);
             this.ghiNhanYKienButton.TabIndex = 4;
             this.ghiNhanYKienButton.Text = "Ghi nhận ý kiến khách hàng";
             this.ghiNhanYKienButton.UseVisualStyleBackColor = true;
@@ -91,9 +96,10 @@
             // 
             // goiXeButton
             // 
-            this.goiXeButton.Location = new System.Drawing.Point(634, 309);
+            this.goiXeButton.Location = new System.Drawing.Point(423, 201);
+            this.goiXeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.goiXeButton.Name = "goiXeButton";
-            this.goiXeButton.Size = new System.Drawing.Size(608, 55);
+            this.goiXeButton.Size = new System.Drawing.Size(405, 36);
             this.goiXeButton.TabIndex = 5;
             this.goiXeButton.Text = "Gọi xe";
             this.goiXeButton.UseVisualStyleBackColor = true;
@@ -101,9 +107,10 @@
             // 
             // backButt
             // 
-            this.backButt.Location = new System.Drawing.Point(16, 17);
+            this.backButt.Location = new System.Drawing.Point(11, 11);
+            this.backButt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backButt.Name = "backButt";
-            this.backButt.Size = new System.Drawing.Size(134, 49);
+            this.backButt.Size = new System.Drawing.Size(89, 32);
             this.backButt.TabIndex = 6;
             this.backButt.Text = "Quay lại";
             this.backButt.UseVisualStyleBackColor = true;
@@ -113,27 +120,27 @@
             // 
             this.hienThiMaKHLabel.AutoSize = true;
             this.hienThiMaKHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hienThiMaKHLabel.Location = new System.Drawing.Point(178, 134);
-            this.hienThiMaKHLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hienThiMaKHLabel.Location = new System.Drawing.Point(119, 87);
             this.hienThiMaKHLabel.Name = "hienThiMaKHLabel";
-            this.hienThiMaKHLabel.Size = new System.Drawing.Size(0, 25);
+            this.hienThiMaKHLabel.Size = new System.Drawing.Size(0, 16);
             this.hienThiMaKHLabel.TabIndex = 8;
             // 
             // checkOutLabel
             // 
             this.checkOutLabel.AutoSize = true;
             this.checkOutLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkOutLabel.Location = new System.Drawing.Point(535, 126);
+            this.checkOutLabel.Location = new System.Drawing.Point(357, 82);
+            this.checkOutLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.checkOutLabel.Name = "checkOutLabel";
-            this.checkOutLabel.Size = new System.Drawing.Size(173, 33);
+            this.checkOutLabel.Size = new System.Drawing.Size(119, 22);
             this.checkOutLabel.TabIndex = 13;
             this.checkOutLabel.Text = "CHECKOUT";
             // 
             // fCheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 534);
+            this.ClientSize = new System.Drawing.Size(840, 347);
             this.Controls.Add(this.checkOutLabel);
             this.Controls.Add(this.hienThiMaKHLabel);
             this.Controls.Add(this.backButt);
@@ -143,7 +150,9 @@
             this.Controls.Add(this.xemHoaDonButton);
             this.Controls.Add(this.tinhTrangPhongButton);
             this.Controls.Add(this.xemDanhSachQuanLyButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fCheckOut";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check out";
             this.ResumeLayout(false);
             this.PerformLayout();

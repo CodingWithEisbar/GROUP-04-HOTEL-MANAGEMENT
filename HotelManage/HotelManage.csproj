@@ -69,6 +69,7 @@
     <Compile Include="DAO\PhieuSuDungDVDAO.cs" />
     <Compile Include="DAO\PhongDAO.cs" />
     <Compile Include="DAO\QuanLyDichVuDAO.cs" />
+    <Compile Include="DAO\TinhTrangPhongDAO.cs" />
     <Compile Include="DAO\TourDuLichDAO.cs" />
     <Compile Include="DTO\DanhSachNhaXe.cs" />
     <Compile Include="DTO\Dichvu.cs" />

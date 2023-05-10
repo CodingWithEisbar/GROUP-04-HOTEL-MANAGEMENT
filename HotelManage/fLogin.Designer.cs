@@ -59,17 +59,19 @@ namespace HotelManage
             this.panel1.Controls.Add(this.loginButton);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(14, 15);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(966, 323);
+            this.panel1.Size = new System.Drawing.Size(644, 210);
             this.panel1.TabIndex = 0;
             // 
             // keToanCheckBox
             // 
             this.keToanCheckBox.AutoSize = true;
-            this.keToanCheckBox.Location = new System.Drawing.Point(108, 253);
+            this.keToanCheckBox.Location = new System.Drawing.Point(72, 164);
+            this.keToanCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.keToanCheckBox.Name = "keToanCheckBox";
-            this.keToanCheckBox.Size = new System.Drawing.Size(90, 24);
+            this.keToanCheckBox.Size = new System.Drawing.Size(63, 17);
             this.keToanCheckBox.TabIndex = 8;
             this.keToanCheckBox.Text = "Kế toán";
             this.keToanCheckBox.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@ namespace HotelManage
             // LeTanCheckBox
             // 
             this.LeTanCheckBox.AutoSize = true;
-            this.LeTanCheckBox.Location = new System.Drawing.Point(108, 223);
+            this.LeTanCheckBox.Location = new System.Drawing.Point(72, 145);
+            this.LeTanCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LeTanCheckBox.Name = "LeTanCheckBox";
-            this.LeTanCheckBox.Size = new System.Drawing.Size(84, 24);
+            this.LeTanCheckBox.Size = new System.Drawing.Size(60, 17);
             this.LeTanCheckBox.TabIndex = 7;
             this.LeTanCheckBox.Text = "Lễ Tân";
             this.LeTanCheckBox.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@ namespace HotelManage
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(108, 191);
+            this.checkBox1.Location = new System.Drawing.Point(72, 124);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(92, 24);
+            this.checkBox1.Size = new System.Drawing.Size(63, 17);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Bellman";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -98,17 +102,19 @@ namespace HotelManage
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 191);
+            this.label2.Location = new System.Drawing.Point(13, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Vai trò";
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(844, 280);
+            this.cancelButton.Location = new System.Drawing.Point(563, 182);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(118, 38);
+            this.cancelButton.Size = new System.Drawing.Size(79, 25);
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -116,9 +122,10 @@ namespace HotelManage
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(720, 280);
+            this.loginButton.Location = new System.Drawing.Point(480, 182);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(118, 38);
+            this.loginButton.Size = new System.Drawing.Size(79, 25);
             this.loginButton.TabIndex = 2;
             this.loginButton.Text = "Log In";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -128,24 +135,28 @@ namespace HotelManage
             // 
             this.panel3.Controls.Add(this.passwordTextBox);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(3, 85);
+            this.panel3.Location = new System.Drawing.Point(2, 55);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(960, 74);
+            this.panel3.Size = new System.Drawing.Size(640, 48);
             this.panel3.TabIndex = 1;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(100, 17);
+            this.passwordTextBox.Location = new System.Drawing.Point(67, 11);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(844, 26);
+            this.passwordTextBox.Size = new System.Drawing.Size(564, 20);
             this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 17);
+            this.label1.Location = new System.Drawing.Point(10, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Password";
             // 
@@ -153,34 +164,39 @@ namespace HotelManage
             // 
             this.panel2.Controls.Add(this.userNameTextBox);
             this.panel2.Controls.Add(this.Username);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(960, 74);
+            this.panel2.Size = new System.Drawing.Size(640, 48);
             this.panel2.TabIndex = 0;
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.Location = new System.Drawing.Point(105, 17);
+            this.userNameTextBox.Location = new System.Drawing.Point(70, 11);
+            this.userNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userNameTextBox.Name = "userNameTextBox";
-            this.userNameTextBox.Size = new System.Drawing.Size(838, 26);
+            this.userNameTextBox.Size = new System.Drawing.Size(560, 20);
             this.userNameTextBox.TabIndex = 1;
             // 
             // Username
             // 
             this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(15, 17);
+            this.Username.Location = new System.Drawing.Point(10, 11);
+            this.Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(83, 20);
+            this.Username.Size = new System.Drawing.Size(55, 13);
             this.Username.TabIndex = 0;
             this.Username.Text = "Username";
             // 
             // fLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 352);
+            this.ClientSize = new System.Drawing.Size(662, 229);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
             this.Load += new System.EventHandler(this.fLogin_Load);

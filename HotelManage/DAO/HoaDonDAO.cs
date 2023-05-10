@@ -21,6 +21,8 @@ namespace HotelManage.DAO
         private HoaDonDAO() { }
         public DataTable getInvoiceList (string name)
         {
+            if(name == "*")
+                return DataProvider.Instance.ExecuteQuery("SELECT HD.MAHD AS N'Mã hóa đơn', KH.TENKH AS N'Tên khách hàng', HD.TONGTIEN AS N'Tổng tiền'  FROM HOADON HD, KHACHHANG KH WHERE KH.MAKH = HD.MAKH");
             return DataProvider.Instance.ExecuteQuery("SELECT HD.MAHD AS N'Mã hóa đơn', KH.TENKH AS N'Tên khách hàng', HD.TONGTIEN AS N'Tổng tiền'  FROM HOADON HD, KHACHHANG KH WHERE KH.MAKH = HD.MAKH AND KH.TENKH = N'" + name + "'");
         }
         

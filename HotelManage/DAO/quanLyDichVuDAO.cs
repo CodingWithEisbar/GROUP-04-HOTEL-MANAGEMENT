@@ -20,6 +20,8 @@ namespace HotelManage.DAO
         public DataTable getServiceList(string name)
         {
             // Xem danh sách các khách hàng và dịch vụ mà họ sử dụng
+            if(name == "*")
+                return DataProvider.Instance.ExecuteQuery("SELECT DV.TENDICHVU AS N'Tên dịch vụ', DV.GIATIEN AS N'Giá tiền', KH.TENKH AS N'Tên khách hàng' FROM DICHVU DV, PHIEU PH, PHIEUDANGKYDICHVU PHDV, KHACHHANG KH WHERE KH.MAKH = PH.MAKH AND PHDV.MAPHIEU = PH.MAPHIEU AND PHDV.DICHVUSUDUNG = DV.MADICHVU");
             return DataProvider.Instance.ExecuteQuery("SELECT DV.TENDICHVU AS N'Tên dịch vụ', DV.GIATIEN AS N'Giá tiền', KH.TENKH AS N'Tên khách hàng' FROM DICHVU DV, PHIEU PH, PHIEUDANGKYDICHVU PHDV, KHACHHANG KH WHERE KH.MAKH = PH.MAKH AND PHDV.MAPHIEU = PH.MAPHIEU AND PHDV.DICHVUSUDUNG = DV.MADICHVU AND KH.TENKH = N'" + name + "'");
         }
         

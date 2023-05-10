@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roomIDLabel = new System.Windows.Forms.Label();
+            this.customerNameLabel = new System.Windows.Forms.Label();
             this.backButt = new System.Windows.Forms.Button();
-            this.roomIDTextbox = new System.Windows.Forms.TextBox();
+            this.customerNameTextbox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.danhSachQuanLyDataGridView = new System.Windows.Forms.DataGridView();
             this.xemTinhTrangPhongLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachQuanLyDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // roomIDLabel
+            // customerNameLabel
             // 
-            this.roomIDLabel.AutoSize = true;
-            this.roomIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomIDLabel.Location = new System.Drawing.Point(51, 112);
-            this.roomIDLabel.Name = "roomIDLabel";
-            this.roomIDLabel.Size = new System.Drawing.Size(111, 25);
-            this.roomIDLabel.TabIndex = 0;
-            this.roomIDLabel.Text = "Mã phòng: ";
+            this.customerNameLabel.AutoSize = true;
+            this.customerNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerNameLabel.Location = new System.Drawing.Point(28, 116);
+            this.customerNameLabel.Name = "customerNameLabel";
+            this.customerNameLabel.Size = new System.Drawing.Size(209, 25);
+            this.customerNameLabel.TabIndex = 0;
+            this.customerNameLabel.Text = "Nhập tên khách hàng: ";
             // 
             // backButt
             // 
@@ -57,22 +57,23 @@
             this.backButt.UseVisualStyleBackColor = true;
             this.backButt.Click += new System.EventHandler(this.backButt_Click);
             // 
-            // roomIDTextbox
+            // customerNameTextbox
             // 
-            this.roomIDTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomIDTextbox.Location = new System.Drawing.Point(168, 111);
-            this.roomIDTextbox.Name = "roomIDTextbox";
-            this.roomIDTextbox.Size = new System.Drawing.Size(422, 30);
-            this.roomIDTextbox.TabIndex = 4;
+            this.customerNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerNameTextbox.Location = new System.Drawing.Point(241, 115);
+            this.customerNameTextbox.Name = "customerNameTextbox";
+            this.customerNameTextbox.Size = new System.Drawing.Size(422, 30);
+            this.customerNameTextbox.TabIndex = 4;
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(597, 102);
+            this.searchButton.Location = new System.Drawing.Point(670, 106);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(134, 49);
             this.searchButton.TabIndex = 5;
             this.searchButton.Text = "Tìm";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // danhSachQuanLyDataGridView
             // 
@@ -103,9 +104,9 @@
             this.Controls.Add(this.xemTinhTrangPhongLabel);
             this.Controls.Add(this.danhSachQuanLyDataGridView);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.roomIDTextbox);
+            this.Controls.Add(this.customerNameTextbox);
             this.Controls.Add(this.backButt);
-            this.Controls.Add(this.roomIDLabel);
+            this.Controls.Add(this.customerNameLabel);
             this.Name = "fXemDanhSachQuanLy";
             this.Text = "Xem danh sách quản lý khách sạn";
             ((System.ComponentModel.ISupportInitialize)(this.danhSachQuanLyDataGridView)).EndInit();
@@ -116,9 +117,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label roomIDLabel;
+        private System.Windows.Forms.Label customerNameLabel;
         private System.Windows.Forms.Button backButt;
-        private System.Windows.Forms.TextBox roomIDTextbox;
+        private System.Windows.Forms.TextBox customerNameTextbox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.DataGridView danhSachQuanLyDataGridView;
         private System.Windows.Forms.Label xemTinhTrangPhongLabel;

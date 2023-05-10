@@ -34,6 +34,7 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.customerNameTextbox = new System.Windows.Forms.TextBox();
             this.hoaDonDataGridView = new System.Windows.Forms.DataGridView();
+            this.inHoaDonButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,12 +96,23 @@
             this.hoaDonDataGridView.Size = new System.Drawing.Size(913, 312);
             this.hoaDonDataGridView.TabIndex = 19;
             // 
+            // inHoaDonButton
+            // 
+            this.inHoaDonButton.Location = new System.Drawing.Point(791, 515);
+            this.inHoaDonButton.Name = "inHoaDonButton";
+            this.inHoaDonButton.Size = new System.Drawing.Size(134, 50);
+            this.inHoaDonButton.TabIndex = 20;
+            this.inHoaDonButton.Text = "In hóa đơn";
+            this.inHoaDonButton.UseVisualStyleBackColor = true;
+            this.inHoaDonButton.Click += new System.EventHandler(this.inHoaDonButton_Click);
+            // 
             // fXemHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(937, 521);
+            this.ClientSize = new System.Drawing.Size(937, 573);
+            this.Controls.Add(this.inHoaDonButton);
             this.Controls.Add(this.hoaDonDataGridView);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.customerNameTextbox);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.TextBox customerNameTextbox;
         private System.Windows.Forms.DataGridView hoaDonDataGridView;
+        private System.Windows.Forms.Button inHoaDonButton;
     }
 }

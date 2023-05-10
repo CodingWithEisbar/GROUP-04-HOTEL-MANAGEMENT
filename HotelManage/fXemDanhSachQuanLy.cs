@@ -19,13 +19,21 @@ namespace HotelManage
         public fXemDanhSachQuanLy()
         {
             InitializeComponent();
+            string name = customerNameTextbox.Text;
             danhSachQuanLyDataGridView.DataSource = ServiceUsingList;
-            ServiceUsingList.DataSource = ServiceUsingList;
+            ServiceUsingList.DataSource = QuanLyDichVuDAO.Instance.getServiceList(name);
+
         }
 
         private void backButt_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string customerName = customerNameTextbox.Text;
+            ServiceUsingList.DataSource = QuanLyDichVuDAO.Instance.getServiceList(customerName);
         }
     }
     

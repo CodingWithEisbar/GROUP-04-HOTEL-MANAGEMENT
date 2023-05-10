@@ -20,14 +20,14 @@ namespace HotelManage
             InitializeComponent();
             string roomNum = txbRoomNumber.Text;
             dataGridView1.DataSource = promoList;
-            promoList.DataSource = phongDAO.Instance.getRoomPromotion(roomNum);
+            promoList.DataSource = PhongDAO.Instance.getRoomPromotion(roomNum);
             richTextBox1.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "NOIDUNG", true, DataSourceUpdateMode.Never));
         }
 
         private void btnKiemtra_Click(object sender, EventArgs e)
         {
             string roomNum = txbRoomNumber.Text;
-            promoList.DataSource = phongDAO.Instance.getRoomPromotion(roomNum);
+            promoList.DataSource = PhongDAO.Instance.getRoomPromotion(roomNum);
 
         }
     }

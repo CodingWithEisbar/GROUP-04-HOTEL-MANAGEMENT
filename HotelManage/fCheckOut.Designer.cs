@@ -45,7 +45,7 @@
             this.xemDanhSachQuanLyButton.Name = "xemDanhSachQuanLyButton";
             this.xemDanhSachQuanLyButton.Size = new System.Drawing.Size(608, 55);
             this.xemDanhSachQuanLyButton.TabIndex = 0;
-            this.xemDanhSachQuanLyButton.Text = "Xem danh sách quản lý";
+            this.xemDanhSachQuanLyButton.Text = "Các dịch vụ khách hàng sử dụng";
             this.xemDanhSachQuanLyButton.UseVisualStyleBackColor = true;
             this.xemDanhSachQuanLyButton.Click += new System.EventHandler(this.xemDanhSachQuanLyButton_Click);
             // 

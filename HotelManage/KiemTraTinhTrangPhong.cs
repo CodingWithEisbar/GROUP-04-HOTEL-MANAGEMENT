@@ -22,7 +22,7 @@ namespace HotelManage
         void loadStatus()
         {
 
-            List<phong> listroom = phongDAO.Instance.checkStatus(maPhongTextBox.Text);
+            List<phong> listroom = PhongDAO.Instance.checkStatus(maPhongTextBox.Text);
             foreach(phong Item in listroom)
             {
                 this.status = Item.Trangthaivs.ToString();

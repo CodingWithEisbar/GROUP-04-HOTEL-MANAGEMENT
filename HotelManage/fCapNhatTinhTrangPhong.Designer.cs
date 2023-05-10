@@ -30,6 +30,9 @@
         {
             this.backButt = new System.Windows.Forms.Button();
             this.capNhatTinhTrangPhongLabel = new System.Windows.Forms.Label();
+            this.capNhatDataGridView = new System.Windows.Forms.DataGridView();
+            this.updateButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.capNhatDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // backButt
@@ -46,21 +49,43 @@
             // 
             this.capNhatTinhTrangPhongLabel.AutoSize = true;
             this.capNhatTinhTrangPhongLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.capNhatTinhTrangPhongLabel.Location = new System.Drawing.Point(255, 76);
+            this.capNhatTinhTrangPhongLabel.Location = new System.Drawing.Point(243, 69);
             this.capNhatTinhTrangPhongLabel.Name = "capNhatTinhTrangPhongLabel";
             this.capNhatTinhTrangPhongLabel.Size = new System.Drawing.Size(447, 33);
             this.capNhatTinhTrangPhongLabel.TabIndex = 13;
             this.capNhatTinhTrangPhongLabel.Text = "CẬP NHẬT TÌNH TRẠNG PHÒNG";
             // 
+            // capNhatDataGridView
+            // 
+            this.capNhatDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.capNhatDataGridView.Location = new System.Drawing.Point(12, 117);
+            this.capNhatDataGridView.Name = "capNhatDataGridView";
+            this.capNhatDataGridView.RowHeadersWidth = 62;
+            this.capNhatDataGridView.RowTemplate.Height = 28;
+            this.capNhatDataGridView.Size = new System.Drawing.Size(868, 303);
+            this.capNhatDataGridView.TabIndex = 14;
+            // 
+            // updateButton
+            // 
+            this.updateButton.Location = new System.Drawing.Point(381, 426);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(134, 49);
+            this.updateButton.TabIndex = 15;
+            this.updateButton.Text = "Cập nhật";
+            this.updateButton.UseVisualStyleBackColor = true;
+            // 
             // fCapNhatTinhTrangPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 456);
+            this.ClientSize = new System.Drawing.Size(892, 485);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.capNhatDataGridView);
             this.Controls.Add(this.capNhatTinhTrangPhongLabel);
             this.Controls.Add(this.backButt);
             this.Name = "fCapNhatTinhTrangPhong";
             this.Text = "Cập nhật tình trạng phòng";
+            ((System.ComponentModel.ISupportInitialize)(this.capNhatDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,5 +95,7 @@
 
         private System.Windows.Forms.Button backButt;
         private System.Windows.Forms.Label capNhatTinhTrangPhongLabel;
+        private System.Windows.Forms.DataGridView capNhatDataGridView;
+        private System.Windows.Forms.Button updateButton;
     }
 }

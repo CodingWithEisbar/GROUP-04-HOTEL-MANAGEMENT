@@ -18,6 +18,9 @@ namespace HotelManage
         public fXemHoaDon()
         {
             InitializeComponent();
+            string name = customerNameTextbox.Text;
+            hoaDonDataGridView.DataSource = invoiceList;
+            invoiceList.DataSource = HoaDonDAO.Instance.getInvoiceList(name);
         }
 
         private void backButt_Click(object sender, EventArgs e)
@@ -25,11 +28,16 @@ namespace HotelManage
             this.Close();
 
         }
-
         private void searchButton_Click(object sender, EventArgs e)
         {
             string customerName = customerNameTextbox.Text;
             invoiceList.DataSource = HoaDonDAO.Instance.getInvoiceList(customerName);
+        }
+
+        private void inHoaDonButton_Click(object sender, EventArgs e)
+        {
+            fInHoaDon f = new fInHoaDon();
+            f.ShowDialog();
         }
     }
 }

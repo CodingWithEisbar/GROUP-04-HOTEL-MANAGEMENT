@@ -51,7 +51,7 @@
             // backButt
             // 
             this.backButt.Location = new System.Drawing.Point(8, 8);
-            this.backButt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backButt.Margin = new System.Windows.Forms.Padding(2);
             this.backButt.Name = "backButt";
             this.backButt.Size = new System.Drawing.Size(89, 32);
             this.backButt.TabIndex = 3;
@@ -63,7 +63,7 @@
             // 
             this.customerNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerNameTextbox.Location = new System.Drawing.Point(161, 75);
-            this.customerNameTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customerNameTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.customerNameTextbox.Name = "customerNameTextbox";
             this.customerNameTextbox.Size = new System.Drawing.Size(283, 23);
             this.customerNameTextbox.TabIndex = 4;
@@ -71,7 +71,7 @@
             // searchButton
             // 
             this.searchButton.Location = new System.Drawing.Point(447, 69);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(2);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(89, 32);
             this.searchButton.TabIndex = 5;
@@ -112,8 +112,9 @@
             this.Controls.Add(this.customerNameTextbox);
             this.Controls.Add(this.backButt);
             this.Controls.Add(this.customerNameLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fXemDanhSachQuanLy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xem danh sách quản lý khách sạn";
             ((System.ComponentModel.ISupportInitialize)(this.danhSachQuanLyDataGridView)).EndInit();
             this.ResumeLayout(false);
